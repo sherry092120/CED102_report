@@ -317,11 +317,7 @@ main >div.mainGradient >section.movies >div.moviesBlock >div.cardsBlock >a{
 }
 @media (max-width:399px){
     main >div.mainGradient >section.movies >div.moviesBlock >div.cardsBlock >a{
-        /* width: 70%;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%); */
-        width: 65%;
+        width: 100%;
     }
 }
 main >div.mainGradient >section.movies >div.moviesBlock >div.cardsBlock >a >div.card{
