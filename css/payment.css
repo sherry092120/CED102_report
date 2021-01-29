@@ -1,0 +1,136 @@
+@import "./common/common.css";
+@import "./common/nav.css";
+@import "./common/footer.css";
+@import "./common/breadcrumbs_booking.css";
+@import "./common/common_booking.css";
+@import "./common/breadcrumbs.css";
+
+
+main >div.mainGradient >section >div.bookingChoose >div.marginLeft{
+    margin-left: 85px;
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section >div.bookingChoose >div.bookingInformation{
+        padding-bottom: 0;
+    }
+    main >div.mainGradient >section >div.bookingChoose >div.marginLeft{
+        margin-left: 0px;
+        width: 100%;
+        padding-top: 0;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >div.bookingInformation{
+        padding-bottom: 0;
+    }
+    main >div.mainGradient >section >div.bookingChoose >div.marginLeft{
+        margin-left: 0px;
+        width: 100%;
+        padding-top: 0;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >form >h1{
+    padding: 0 0 20px 0;
+    width: 100%;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >h1{
+        font-weight: lighter;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.payment{
+    font-size: 0;
+    /* width: 550px; */
+    border: 2px solid #7496fe;
+    border-radius: 10px;
+    background-color: #001c58;
+    padding: 30px 20px 40px 30px;
+    margin-right: 90px;
+}
+@media (min-width:992px) and (max-width:1199px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.payment{
+        margin-right: 0px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.payment{
+        margin-right: 0px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.payment{
+        margin-right: 0px;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.payment{
+        margin-right: 0px;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation {
+    font-size: 16px;
+    display: inline-block;
+    color: #fff;
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.creditCardInformation{
+        width: 100%;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.creditCardInformation{
+        width: 100%;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.creditCardInformation{
+    margin-left: 40px;
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.creditCardInformation{
+        margin-left: 0px;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.creditCardInformation{
+        margin-left: 0px;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >label{
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 6px;
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >input,main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >select{
+    /* width: 150px; */
+    height: 35px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >#payerName,main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >#cellphone,main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >#mail{
+    width: 200px;
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >#securityCode,main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >input[name="creditCardNumber"]{
+    width: 50px;
+}
+/* main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >#securityCode{
+    width: 120px;
+} */
+main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >select{
+    width: 60px;
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >select,main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >input{
+    padding: 0 8px;
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >select:focus,main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >input:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px rgb(209, 209, 209);
+    border: none;
+    background-color: rgb(196, 204, 252);
+}
+/* 按鈕區 */
+main >div.mainGradient >section >div.bookingChoose >form >div.btnBlock{
+    margin-top: 30px;
+}

@@ -1,0 +1,793 @@
+@import "./common/common.css";
+@import "./common/nav.css";
+@import "./common/footer.css";
+@import "./common/div_booking.css";
+/* Banner */
+section.bannerBlock{
+    font-size: 0px;
+    width:100%;
+    max-width: 1920px;
+}
+@media (max-width:575px){
+    section.bannerBlock{
+        width: 100%;
+        height: 200px;
+    }
+}
+section.bannerBlock >div.banner{
+    width:100%;
+    height: 100%;
+    background-color: #000f6f;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    font-size: 0px;
+    position: relative;
+}
+@media (max-width:575px){
+    section.bannerBlock >div.banner >img{
+        max-height: 100%;
+        max-width: 200%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+section.bannerBlock >div.banner >button{
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px solid rgb(255, 255, 255);
+    width: 12px;
+    padding: 0;
+}
+
+section.bannerBlock >div.banner >button.right{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(0%,-50%);
+}
+
+section.bannerBlock >div.banner >button.left{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(0%,-50%);
+}
+
+main >div.mainGradient{
+    /* background: linear-gradient(30deg,#2e02f3da 0%,#1f07d49d 10%,rgb(9, 9, 158) 25%,#170986 45%,rgb(9, 9, 158) 65%,#1f07d49d 85%,#2e02f3da); */
+    background: linear-gradient(210deg,#2f0bce 0%,#300ad68f 15%,#2f00ff27 30%,#2f00ff27 60%,#300ad68f 85%,#2f0bce 100%);
+}
+main >div.mainGradient >section{
+    position: relative;
+}
+main >div.mainGradient >section >h1.title{
+    /* height: 70px; */
+    position: relative;
+    left: 70px;
+    top: 46px;
+    display: inline-block;
+}
+main >div.mainGradient >section >h1.title::before{
+    content: "";
+    width: 190px;
+    height: 70px;
+    position: absolute;
+    top: -46px;
+    left: -70px;
+    background-image: url(../img/title-logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+main >div.mainGradient >section >button{
+    width: 100px;
+    height: 35px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+    display: block;
+    margin: 30px auto 100px auto;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >button{
+        margin: 0px auto 50px auto;
+    }
+}
+main >div.mainGradient >section >button >a{
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    line-height: 35px;
+    border: 1px solid #fff;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    font-size: 16px;
+    color: #fff;
+}
+main >div.mainGradient >section >button >a:hover{
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.692);
+}
+
+/* 線上訂票 */
+main >div.mainGradient >section.booking{
+    width: 1140px;
+    /* background-image: url("../img/booking-logo.png");
+    background-repeat: no-repeat; */
+    /* background-size: 410px; */
+    /* background-position: left 555px top 286px; */
+    margin: 0 auto;
+    padding: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media (max-width:768px) and (max-width:992px){
+    main >div.mainGradient >section.booking{
+        padding: 50px 0px 50px 0px;
+    }
+}
+@media (max-width:767px){
+    main >div.mainGradient >section.booking{
+        padding: 30px 0px 50px 0px;
+    }
+}
+@media (max-width:767px){
+    main >div.mainGradient >section.booking > form.booking{
+        order: 1;
+    }
+}
+/* 長方體 */
+main >div.mainGradient >section.booking >div.perspective{
+    width: 200px;
+    height: 280px;
+    margin-right: 100px;
+    margin-top: 50px;
+
+    perspective: 1000px;
+    perspective-origin: 50% 50px;
+}
+@media (min-width:768px) and (max-width:991px){
+    main >div.mainGradient >section.booking >div.perspective{
+        margin-right: 80px;
+    }
+}
+@media (max-width:767px){
+    main >div.mainGradient >section.booking >div.perspective{
+        margin: 50px 20px 0px 20px;
+        order:2;
+    }
+}
+main >div.mainGradient >section.booking >div.perspective >div.cube{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    /* border: 1px solid red; */
+    /* animation: cube_rotate 20s infinite ease; */
+}
+main >div.mainGradient >section.booking >div.perspective >div.cube > div{
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    text-align: center;
+    line-height: 200px;
+    position: absolute;
+    background-color: rgba(27, 12, 66, 0.808);
+}
+main >div.mainGradient >section.booking >div.perspective >div.cube > div.inner{
+    width: 50%;
+    height: 38%;
+    background-color: #000000c7;
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+main >div.mainGradient >section.booking >div.perspective >div.cube > div.inner > img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* opacity: 0; */
+    margin: 0;
+    max-width: 100%;
+}
+main >div.mainGradient >section.booking >div.perspective >div.cube >div.front{
+    transform: translateZ(100px);
+    overflow: hidden;
+}
+
+main >div.mainGradient >section.booking >div.perspective >div.cube >div.back{
+    transform: translateZ(-100px) rotateY(180deg);
+    overflow: hidden;
+}
+
+main >div.mainGradient >section.booking >div.perspective >div.cube >div.left{
+    transform: translateX(-100px) rotateY(270deg);
+    transform-origin: 50% 50%;
+    overflow: hidden;
+}
+
+main >div.mainGradient >section.booking >div.perspective >div.cube >div.right{
+    transform: translateX(100px) rotateY(90deg);
+    transform-origin: 50% 50%;
+    overflow: hidden;
+}
+
+main >div.mainGradient >section.booking >div.perspective >div.cube >div.top{
+    height: 200px;
+    width: 200px;
+    transform:translateY(-100px) rotateX(90deg);
+    transform-origin: 50% 50%;
+}
+
+main >div.mainGradient >section.booking >div.perspective >div.cube >div.bottom{
+    height: 200px;
+    width: 200px;
+    transform:translateY(180px) rotateX(270deg);
+    transform-origin: 50% 50%;
+}
+
+main >div.mainGradient >section.booking >div.perspective >div.cube > div >img{
+    max-width: 85%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+/* 電影 */
+main >div.mainGradient >section.movies{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+    font-size: 0;
+}
+main >div.mainGradient >section >div.marginCenter{
+    text-align: center;
+    margin-top: 70px;
+}
+main >div.mainGradient >section >div.marginCenter >h2.movies_eventsTitle{
+    display: inline-block;
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+main >div.mainGradient >section >div.marginCenter >h2.movies_eventsTitle:hover{
+    cursor: pointer;
+}
+@media (min-width:576px) and (max-width:1199px){
+    main >div.mainGradient >section >div.marginCenter >h2.movies_eventsTitle{
+        width: 40%;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.marginCenter >h2.movies_eventsTitle{
+        width: 40%;
+        font-weight: lighter;
+        line-height: 30px;
+        height: 30px;
+    }
+}
+main >div.mainGradient >section >div.marginCenter >h2.leftTitle{
+    color: #fff;
+    border-bottom: 3px solid #6d81ff;
+}
+main >div.mainGradient >section >div.marginCenter >h2.rightTitle{
+    color: #4a61a3;
+    border-bottom: 3px solid #374f96c0;
+}
+main >div.mainGradient >section.movies >div.moviesBlock{
+    position: relative;
+    overflow: hidden;
+    margin: 30px auto;
+    width: 80%;
+    padding: 3px;
+}
+/* CARD */
+main >div.mainGradient >section.movies >div.moviesBlock >div.cardsBlock{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 0px auto;
+    padding: 3px 0px;
+}
+main >div.mainGradient >section.movies >div.moviesBlock >div.cardsBlock >a{
+    display: flex;
+    flex-shrink: 0;
+    width: calc( (100% - 75px) / 4 );
+    margin-right: 25px;
+}
+@media (min-width:768px) and (max-width:1199px){
+    main >div.mainGradient >section.movies >div.moviesBlock >div.cardsBlock >a{
+        width: calc( (100% - 50px) / 3 );
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section.movies >div.moviesBlock >div.cardsBlock >a{
+        width: calc( (100% - 25px) / 2 );
+    }
+}
+@media (min-width:400px) and (max-width:575px){
+    main >div.mainGradient >section.movies >div.moviesBlock >div.cardsBlock >a{
+        width: calc( (100% - 25px) / 2 );
+    }
+}
+@media (max-width:399px){
+    main >div.mainGradient >section.movies >div.moviesBlock >div.cardsBlock >a{
+        /* width: 70%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%); */
+        width: 65%;
+    }
+}
+main >div.mainGradient >section.movies >div.moviesBlock >div.cardsBlock >a >div.card{
+    width: 100%;
+    background-color: #162144;
+}
+/* card:hover */
+main >div.mainGradient >section.movies >div.moviesBlock >div.cardsBlock >a >div.card:hover{
+    outline: 2px solid #6c88ff;
+}
+
+main >div.mainGradient >section.movies >div.moviesBlock >div.cardsBlock >a >div.card >div.img{
+    width: 100%;
+    overflow: hidden;
+}
+main >div.mainGradient >section.movies >div.moviesBlock >div.cardsBlock >a >div.card >h3{
+    margin-top: 8px;
+    margin-left: 10px;
+    line-height: 28px;
+}
+main >div.mainGradient >section.movies >div.moviesBlock >div.cardsBlock >a >div.card >p{
+    color: #fff;
+    margin: 0 0 0 10px;
+    display: inline-block;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+/* 電影左右按鈕 */
+main >div.mainGradient >section.movies >div.moviesBlock >button{
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgb(16, 26, 78);
+    padding: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main >div.mainGradient >section.movies >div.moviesBlock >button.left{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+main >div.mainGradient >section.movies >div.moviesBlock >button.right{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+main >div.mainGradient >section.movies >div.moviesBlock >button >img{
+    height: 14px;
+}
+/* 影城 */
+main >div.mainGradient >section.cinemas{
+    width: 1140px;
+    margin: 0 auto;
+    font-size: 0;
+    /* background-color: rgba(0, 0, 0, 0.377); */
+}
+main >div.mainGradient >section.cinemas >div.marginCenter{
+    /* background-color: wheat; */
+    width: 100%;
+    padding: 50px 30px 100px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+@media (max-width:575px){
+    main >div.mainGradient >section.cinemas >div.marginCenter{
+        padding: 20px 30px 100px 30px;
+    }
+}
+main >div.mainGradient >section.cinemas >div.marginCenter >div.card{
+    width: 40%;
+    text-align: left;
+    display: inline-block;
+    background-color: #162144;
+}
+@media (min-width:768px) and (max-width:1199px){
+    main >div.mainGradient >section.cinemas >div.marginCenter >div.card{
+        width: 45%;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section.cinemas >div.marginCenter >div.card{
+        width: 85%;
+    }
+}
+@media (min-width:500px) and (max-width:575px){
+    main >div.mainGradient >section.cinemas >div.marginCenter >div.card{
+        width: 100%;
+        display: flex;
+    }
+}
+@media (max-width:499px){
+    main >div.mainGradient >section.cinemas >div.marginCenter >div.card{
+        width: 100%;
+    }
+}
+/* 影城左邊card: */
+main >div.mainGradient >section.cinemas >div.marginCenter >div.cardLeft{
+    /* outline: 2px solid #6c88ff; */
+    margin-right: 2px;
+    outline: 2px solid #022281;
+    opacity: 0.65;
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section.cinemas >div.marginCenter >div.cardLeft{
+        margin-bottom: 20px;
+    }
+}
+@media (min-width:500px) and (max-width:575px){
+    main >div.mainGradient >section.cinemas >div.marginCenter >div.cardLeft{
+        margin-right: 0px;
+    }
+}
+@media (max-width:499px){
+    main >div.mainGradient >section.cinemas >div.marginCenter >div.cardLeft{
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+}
+/* 影城右邊card: */
+main >div.mainGradient >section.cinemas >div.marginCenter >div.cardRight{
+    outline: 2px solid #022281;
+    opacity: 0.65;
+}
+
+main >div.mainGradient >section.cinemas >div.marginCenter >div.cardLeft.-on,main >div.mainGradient >section.cinemas >div.marginCenter >div.cardRight.-on{
+    outline: 2px solid #6c88ff;
+    opacity: 1;
+}
+
+main >div.mainGradient >section.cinemas >div.marginCenter >div.card >div.img{
+    width: 100%;
+}
+main >div.mainGradient >section.cinemas >div.marginCenter >div.card >div.cardContent{
+    padding-bottom: 10px;
+}
+@media (min-width:500px) and (max-width:575px){
+    :root{
+        --card-img-width: 40%;
+    }
+    main >div.mainGradient >section.cinemas >div.marginCenter >div.card >div.img{
+        width: var(--card-img-width);
+    }
+    main >div.mainGradient >section.cinemas >div.marginCenter >div.card >div.cardContent{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: calc(100% - var(--card-img-width));
+        padding: 20px;
+    }
+}
+main >div.mainGradient >section.cinemas >div.marginCenter >div.card >div.cardContent >h2{
+    margin: 20px 20px 10px 20px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+@media (min-width:500px) and (max-width:575px){
+    main >div.mainGradient >section.cinemas >div.marginCenter >div.card >div.cardContent >h2{
+        margin: 0 0 10px 0;
+        width: 100%;
+    }
+}
+main >div.mainGradient >section.cinemas >div.marginCenter >div.card >div.cardContent >div.combine{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+@media (min-width:500px) and (max-width:575px){
+    main >div.mainGradient >section.cinemas >div.marginCenter >div.card >div.cardContent >div.combine{
+        margin-left: 0px;
+    }
+}
+main >div.mainGradient >section.cinemas >div.marginCenter >div.card >div.cardContent >div.combine >p{
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    vertical-align: top;
+    margin: 10px;
+}
+@media (min-width:500px) and (max-width:575px){
+    main >div.mainGradient >section.cinemas >div.marginCenter >div.card >div.cardContent >div.combine >p{
+        line-height: 20px;
+        margin: 0px;
+        font-size: 14px;
+    }
+}
+@media (max-width:499px){
+    main >div.mainGradient >section.cinemas >div.marginCenter >div.card >div.cardContent >div.combine >p{
+        line-height: 14px;
+        font-size: 14px;
+    }
+}
+main >div.mainGradient >section.cinemas >div.marginCenter >div.card >div.cardContent >div.combine >img{
+    height: 14px;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+@media (min-width:500px) and (max-width:575px){
+    main >div.mainGradient >section.cinemas >div.marginCenter >div.card >div.cardContent >div.combine >img{
+        margin-top: 3px;
+    }
+}
+@media (max-width:499px){
+    main >div.mainGradient >section.cinemas >div.marginCenter >div.card >div.cardContent >div.combine >img{
+        margin-right: 0px;
+    }
+}
+
+/* 公告與活動 */
+main >div.mainGradient >section.events{
+    width: 1140px;
+    /* height: 800px; */
+    margin: 0 auto;
+    padding: 0 0 50px 0;
+    font-size: 0;
+    position: relative;
+    /* background-color: rgba(0, 0, 0, 0.377); */
+}
+main >div.mainGradient >section.events >div.information{
+    width: 70%;
+    background-color: #162144;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.548);
+    margin: 20px auto 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width:1199px){
+    main >div.mainGradient >section.events >div.information{
+        width: 80%;
+    }
+}
+/* 活動 */
+main >div.mainGradient >section.events >div.activity{
+    padding: 40px 60px;
+}
+@media (min-width:768px) and (max-width:991px){
+    main >div.mainGradient >section.events >div.activity{
+        padding: 40px 60px 10px 60px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section.events >div.activity{
+        padding: 40px 40px 10px 40px;
+    }
+}
+@media (min-width:380px) and (max-width:575px){
+    main >div.mainGradient >section.events >div.activity{
+        padding: 30px 30px 0px 30px;
+    }
+}
+@media (max-width:379px){
+    main >div.mainGradient >section.events >div.activity{
+        padding: 20px 20px 0px 20px;
+    }
+}
+main >div.mainGradient >section.events >div.activity >div.img{
+    width: 55%;
+    background-color: #c6e8ff;
+    display: inline-block;
+    vertical-align: top;
+}
+@media (max-width:991px){
+    main >div.mainGradient >section.events >div.activity >div.img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+main >div.mainGradient >section.events >div.activity >div.imgTop{
+    margin-bottom: 30px;
+}
+@media (max-width:991px){
+    main >div.mainGradient >section.events >div.activity >div.imgTop{
+        margin-bottom: 15px;
+    }
+}
+main >div.mainGradient >section.events >div.activity >div.text{
+    width: calc( 100% - 55% - 30px);
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 0;
+    letter-spacing: 1px;
+}
+@media (min-width:768px) and (max-width:991px){
+    main >div.mainGradient >section.events >div.activity >div.text{
+        width: 100%;
+        margin-left: 20px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section.events >div.activity >div.text{
+        width: 100%;
+        margin-left: 20px;
+    }
+}
+@media (min-width:380px) and (max-width:575px){
+    main >div.mainGradient >section.events >div.activity >div.text{
+        width: 100%;
+        margin-left: 15px;
+    }
+}
+@media (max-width:379px){
+    main >div.mainGradient >section.events >div.activity >div.text{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+main >div.mainGradient >section.events >div.activity >div.text >p{
+    display: inline-block;
+    margin: 12px 0 0 0;
+    font-size: 12px;
+    color: #fff;
+}
+main >div.mainGradient >section.events >div.activity >div.text >p >a{
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+}
+main >div.mainGradient >section.events >div.activity >div.text >p >a:hover{
+    color: #9eabff;
+}
+main >div.mainGradient >section.events >div.activity >div.text >p.details{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    letter-spacing: 1px;
+}
+
+/* 公告 */
+main >div.mainGradient >section.events >div.announcement{
+    padding: 30px 50px 80px 50px;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section.events >div.announcement{
+        padding: 20px 25px 40px 25px;
+    }
+}
+main >div.mainGradient >section.events >div.announcement >div.text{
+    width: 100%;
+    height: 50px;
+    /* background-color: #ffffff; */
+    border-bottom: 2px solid #8f82bc;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section.events >div.announcement >div.text{
+        height: 40px;
+    }
+}
+main >div.mainGradient >section.events >div.announcement >div.text >a{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    /* border-bottom: 2px solid #8f82bc; */
+    display: inline-block;
+}
+main >div.mainGradient >section.events >div.announcement >div.text >a > div.date{
+    font-size: 16px;
+    color: #fff;
+    line-height: 50px;
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section.events >div.announcement >div.text >a > div.date{
+        font-size: 14px;
+        line-height: 40px;
+        width: 80px;
+    }
+}
+main >div.mainGradient >section.events >div.announcement >div.text >a > div.contentBlock{
+    height: 100%;
+    display: inline-block;
+    width: calc( 100% - 100px );
+    vertical-align: top;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section.events >div.announcement >div.text >a > div.contentBlock{
+        width: calc( 100% - 80px );
+    }
+}
+main >div.mainGradient >section.events >div.announcement >div.text >a > div.contentBlock > p.content{
+    font-size: 16px;
+    color: #fff;
+    line-height: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section.events >div.announcement >div.text >a > div.contentBlock > p.content{
+        font-size: 14px;
+        line-height: 40px;
+    }
+}
+main >div.mainGradient >section.events >button{
+    width: 155px;
+}
+main >div.mainGradient >section.events >button >a{
+    width: 155px;
+}
+
+@media (min-width:992px) and (max-width:1199px){
+    main >div.mainGradient >section.booking,main >div.mainGradient >section.movies,main >div.mainGradient >section.cinemas,main >div.mainGradient >section.events{
+        width: 960px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    main >div.mainGradient >section.booking,main >div.mainGradient >section.movies,main >div.mainGradient >section.cinemas,main >div.mainGradient >section.events{
+        width: 720px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section.booking,main >div.mainGradient >section.movies,main >div.mainGradient >section.cinemas,main >div.mainGradient >section.events{
+        width: 540px;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section.booking,main >div.mainGradient >section.movies,main >div.mainGradient >section.cinemas,main >div.mainGradient >section.events{
+        width: 100%;
+    }
+}
+
+/* 套件修改 */
+div.flexslider{
+    margin: 0;
+    border: 0px solid black;
+    overflow: hidden;
+}
+div.flexslider ol.flex-control-nav{
+    display: none;
+}
+div.flexslider ul.flex-direction-nav > li > a.flex-next, div.flexslider ul.flex-direction-nav > li > a.flex-prev{
+    z-index: 0;
+}
+
+
+@keyframes cube_rotate {
+    10% {
+        transform: rotateY(0);
+    }
+    20%{
+        transform:  rotateY(90deg);
+    }
+    40% {
+        transform: rotateY(180deg);
+    }
+    60% {
+        transform: rotateY(270deg);
+    }
+    80% {
+        transform: rotateY(360deg);
+    }
+}

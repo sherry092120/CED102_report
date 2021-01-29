@@ -1,0 +1,17 @@
+@import "./common/common.css";
+@import "./common/nav.css";
+@import "./common/footer.css";
+@import "./common/breadcrumbs.css";
+@import "./common/common_movies.css";
+main >div.mainGradient >section >div.marginCenter >h2.leftTitle{
+    border-bottom: 3px solid #374f96c0;
+}
+main >div.mainGradient >section >div.marginCenter >h2.rightTitle{
+    border-bottom: 3px solid #6d81ff;
+}
+main >div.mainGradient >section >div.marginCenter >h2.leftTitle >a{
+    color: #4a61a3;
+}
+main >div.mainGradient >section >div.marginCenter >h2.rightTitle >a{
+    color: #fff;
+}

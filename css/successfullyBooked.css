@@ -1,0 +1,121 @@
+@import "./common/common.css";
+@import "./common/nav.css";
+@import "./common/footer.css";
+@import "./common/breadcrumbs_booking.css";
+@import "./common/common_booking.css";
+@import "./common/breadcrumbs.css";
+
+main >div.mainGradient{
+    background-image: url("../img/booking-logo.png");
+    background-repeat: no-repeat;
+    background-size: 750px;
+    background-position: center bottom;
+}
+main >div.mainGradient >section{
+    width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 0 135px 0;
+}
+@media (min-width:992px) and (max-width:1199px){
+    main >div.mainGradient >section{
+        width: 960px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    main >div.mainGradient >section{
+        width: 720px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section{
+        width: 540px;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section{
+        width: 100%;
+    }
+}
+main >div.mainGradient >section >div.successfullyBooked{
+    width: 400px;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    /* border: 2px solid#6d81ff; */
+    border-radius: 10px;
+    margin:  20px auto 0px auto;
+    /* background-color: #16224375; */
+    font-size: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.successfullyBooked{
+        width: 320px;
+        height: 320px;
+    }
+}
+main >div.mainGradient >section >div.successfullyBooked::before{
+    content: "";
+    display: inline-block;
+    width: 102%;
+    height: 102%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border: 1px solid blue; */
+    background-image: linear-gradient(60deg,#6d80ff 20%,#6d80ff00 30%,#6d80ff 45%,#6d80ff00 70%,#6d81ff 90%);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+main >div.mainGradient >section >div.successfullyBooked::after{
+    content: "";
+    width: calc( 100% - 2px );
+    height: calc( 100% - 2px );
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color:#000f6f;
+    z-index: -1;
+    border-radius: 10px;
+}
+main >div.mainGradient >section >div.successfullyBooked >h1{
+    margin: 120px 0;
+    line-height: 24px;
+    display: inline-block;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.successfullyBooked >h1{
+        margin: 100px 0;
+    }
+}
+main >div.mainGradient >section >div.successfullyBooked >h1 >div.completedIcon{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    vertical-align: top;
+    margin-right: 10px;
+}
+main >div.mainGradient >section >div.successfullyBooked >p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.successfullyBooked >p {
+        margin-bottom: 15px;
+    }
+}
+main >div.mainGradient >section >div.successfullyBooked >p >a{
+    color: #9eabff;
+}
+main >div.mainGradient >section >div.successfullyBooked >button:hover{
+    outline: 1px solid #00a0e9;
+}

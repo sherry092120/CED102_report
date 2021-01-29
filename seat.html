@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zn-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie-booking: seat</title>
+    <link rel="stylesheet" href="./css/seat.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/seat.js"></script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navGradient">
+                <div class="logo">
+                    <a href="./index.html"><img src="./img/nav-logo.png"></a>
+                </div>
+                <div class="menuButton" id="menuButtonBlock">
+                    <button class="menuIcon" id="menuButton">
+                        <div class="line lineTop"></div>
+                        <div class="line lineMiddle"></div>
+                        <div class="line lineBottom"></div>
+                    </button>
+                </div>
+                <div class="menu" id="menu">
+                    <ul class="mainMenu">
+                        <li><a href="./booking.html">線上訂票</a></li>
+                        <li><a href="./movies.html">電影</a></li>
+                        <li><a href="#">影城</a></li>
+                        <li><a href="#">公告與活動</a></li>
+                    </ul>
+                    <div class="subMenu">
+                        <div class="link">
+                            <div class="socialMedia"><a href="#"><img src="./img/icon/icon-facebook.png"></a></div>
+                            <div class="socialMedia"><a href="#"><img src="./img/icon/icon-instagram.png"></a></div>
+                        </div>
+                        <ul>
+                            <li><a href="#">聯絡</a></li>
+                            <li><a href="#">訂票查詢</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="mainGradient">
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="./index.html">首頁</a></li>
+                    <li><a href="./booking.html">線上訂票</a></li>
+                    <li><a href="./notice.html">訂票須知</a></li>
+                    <li><a>訂票流程</a></li>
+                </ul>
+            </div>
+            <div class="Progress">
+                <ul>
+                    <li><a href="./ticketType.html">選擇票種</a></li>
+                    <li><a class="currentProgress">選擇座位</a></li>
+                    <li><a>確認資訊與付款</a></li>
+                    <li><a>驗證</a></li>
+                    <li><a>訂票成功</a></li>
+                </ul>
+            </div>
+            <section>
+                <div class="bookingChoose">
+                    <h1>您的訂票資訊</h1>
+                    <h2 id="movieName">名偵探柯南：紅之校外旅行 鮮紅篇&戀紅篇</h2>
+                    <div class="bookingInformation">
+                        <div class="img"><img src="./img/icon/icon-time-32x32.png"></div>
+                        <p id="time">2020/12/20 09:50</p>
+                        <br>
+                        <div class="img"><img src="./img/icon/icon-map-32x42.6.png"></div>
+                        <p id="cinema">公館Movie影城</p>
+                        <br>
+                        <div class="img"><img src="./img/icon/icon-video-32x21.png"></div>
+                        <p id="hall">A廳</p>
+                        <br>
+                    </div>
+                    <form action="./payment.html" method="get">
+                        <h1>選擇座位</h1>
+                        <div class="chooseSeatBlock">
+                            <div class="chooseSeat">
+                                <div class="screenBlock">
+                                    <div class="screen">
+                                        <div class="screenCover"></div>
+                                        <div class="text">銀幕</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="seats">
+                                    <div class="seatRow" id="seatA">
+                                        <div class="seatNumber">A</div>
+                                        <div class="seat vacancy">1</div>
+                                        <div class="seat vacancy">2</div>
+                                        <div class="seat road vacancy">3</div>
+                                        <div class="seat vacancy">4</div>
+                                        <div class="seat vacancy">5</div>
+                                        <div class="seat vacancy">6</div>
+                                        <div class="seat road vacancy">7</div>
+                                        <div class="seat vacancy">8</div>
+                                    </div>
+                                    <div class="seatRow" id="seatB">
+                                        <div class="seatNumber">B</div>
+                                        <div class="seat vacancy">1</div>
+                                        <div class="seat vacancy">2</div>
+                                        <div class="seat road vacancy">3</div>
+                                        <div class="seat vacancy">4</div>
+                                        <div class="seat sold">5</div>
+                                        <div class="seat vacancy">6</div>
+                                        <div class="seat road vacancy">7</div>
+                                        <div class="seat vacancy">8</div>
+                                    </div>
+                                    <div class="seatRow" id="seatC">
+                                        <div class="seatNumber">C</div>
+                                        <div class="seat vacancy">1</div>
+                                        <div class="seat vacancy">2</div>
+                                        <div class="seat road vacancy">3</div>
+                                        <div class="seat vacancy">4</div>
+                                        <div class="seat vacancy">5</div>
+                                        <div class="seat vacancy">6</div>
+                                        <div class="seat road vacancy">7</div>
+                                        <div class="seat vacancy">8</div>
+                                    </div>
+                                    <div class="seatRow" id="seatD">
+                                        <div class="seatNumber">D</div>
+                                        <div class="seat vacancy">1</div>
+                                        <div class="seat vacancy">2</div>
+                                        <div class="seat sold road">3</div>
+                                        <div class="seat sold">4</div>
+                                        <div class="seat vacancy">5</div>
+                                        <div class="seat vacancy">6</div>
+                                        <div class="seat road vacancy">7</div>
+                                        <div class="seat vacancy">8</div>
+                                    </div>
+                                    <div class="seatRow" id="seatE">
+                                        <div class="seatNumber">E</div>
+                                        <div class="seat vacancy">1</div>
+                                        <div class="seat vacancy">2</div>
+                                        <div class="seat road vacancy">3</div>
+                                        <div class="seat vacancy">4</div>
+                                        <div class="seat vacancy">5</div>
+                                        <div class="seat vacancy">6</div>
+                                        <div class="seat road vacancy">7</div>
+                                        <div class="seat vacancy">8</div>
+                                    </div>
+                                    <div class="seatRow" id="seatF">
+                                        <div class="seatNumber">F</div>
+                                        <div class="seat vacancy">1</div>
+                                        <div class="seat vacancy">2</div>
+                                        <div class="seat road vacancy">3</div>
+                                        <div class="seat vacancy">4</div>
+                                        <div class="seat vacancy">5</div>
+                                        <div class="seat vacancy">6</div>
+                                        <div class="seat road vacancy">7</div>
+                                        <div class="seat vacancy">8</div>
+                                    </div>
+                                </div>
+                                <div class="seatIcon">
+                                    <div class="description"><div class="icon vacancy"></div>空位</div>
+                                    <div class="description"><div class="icon selected"></div>您所選擇的座位</div>
+                                    <div class="description"><div class="icon sold"></div>已售出</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sumBlock" style="display: none;">
+                            <div id="shoppingList" class="shoppingList"></div>
+                            <hr>
+                            <div class="sum">總額NTD<span id="sum">0</span></div>
+                        </div>
+                        <div class="btnBlock">
+                            <img src="./img/booking-logo-opacity-460x172.png" class="backgroundLogo">
+                            <button name="back" type="button" id="back">返回</button>
+                            <button name="next" type="submit">繼續</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="marginAuto">
+            <div class="footer">
+                <ul class="mainMenu">
+                    <li><a href="./booking.html">線上訂票</a></li>
+                    <li><a href="./movies.html">電影</a>
+                        <ul>
+                            <li><a href="./hotNow-1.html">現正熱映</a></li>
+                            <li><a href="./comingSoon-1.html">即將上映</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">影城</a>
+                        <ul>
+                            <li><a href="#">公館Movie影城</a></li>
+                            <li><a href="#">士林Movie影城</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">公告與活動</a>
+                        <ul>
+                            <li><a href="#">公告</a></li>
+                            <li><a href="#">活動</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="group">
+                    <div class="logo"><img src="./img/footer-logo_310x118.png"></div>
+                    <div class="socialMedia">
+                        <a href="#"><img src="./img/icon/icon-facebook-footer52x52.png"></a>
+                        <a href="#"><img src="./img/icon/icon-instagram-footer52x52.png"></a>
+                    </div>
+                </div>
+                <ul class="subMenu">
+                    <li><a href="#">聯絡</a></li>
+                    <li><a href="#">訂票查詢</a></li>
+                    <li><a href="#">常見問題</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div>© Movie影城 All Rights Reserved. Movie影城 版權所有不得轉載</div>
+        </div>
+    </footer>
+</body>
+</html>

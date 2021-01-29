@@ -1,0 +1,210 @@
+main >div.mainGradient >section{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 0 100px 0;
+}
+@media (min-width:992px) and (max-width:1199px){
+    main >div.mainGradient >section{
+        width: 960px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    main >div.mainGradient >section{
+        width: 100%;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section{
+        width: 100%;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section{
+        width: 100%;
+    }
+}
+
+main >div.mainGradient >section >div.bookingChoose{
+    width: 1000px;
+    margin: 0px auto 0 auto;
+    background-color: #16224375;
+    border-radius: 10px;
+    padding: 50px 65px;
+    /* box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.548); */
+    letter-spacing: 1px;
+    /* display: none; */
+}
+@media (min-width:992px) and (max-width:1199px){
+    main >div.mainGradient >section >div.bookingChoose{
+        width: 95%;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    main >div.mainGradient >section >div.bookingChoose{
+        width: 95%;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section >div.bookingChoose{
+        width: 95%;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose{
+        width: 95%;
+        padding: 30px 20px;
+    }
+}
+/* 表單 */
+main >div.mainGradient >section >div.bookingChoose >form{
+    margin-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media (min-width:576px) and (max-width:1199px){
+    main >div.mainGradient >section >div.bookingChoose >form{
+        justify-content: space-between;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form{
+        margin-top: 10px;
+    }
+}
+/* 訂票資訊 */
+main >div.mainGradient >section >div.bookingChoose >h2{
+    padding: 30px 0;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >h1{
+        padding: 0px 10px 10px 10px;
+        font-weight: lighter;
+    }
+    main >div.mainGradient >section >div.bookingChoose >h2{
+        padding: 10px;
+        font-weight: lighter;
+        line-height: 30px;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >div.bookingInformation{
+    display: inline-block;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >div.bookingInformation{
+        padding: 10px;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >div.bookingInformation >div.img{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    margin-right: 12px;
+    vertical-align: top;
+}
+main >div.mainGradient >section >div.bookingChoose >div.bookingInformation >div.img >img{
+    max-height: 100%;
+}
+main >div.mainGradient >section >div.bookingChoose >div.bookingInformation >p{
+    display: inline-block;
+    margin: 0 0 18px 0;
+    color: #fff;
+    line-height: 18px;
+    font-size: 18px;
+    vertical-align: top;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >div.bookingInformation >p{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+}
+/* 加總區 */
+main >div.mainGradient >section >div.bookingChoose >form >div.sumBlock{
+    align-self: flex-start;
+    order: 2;
+    width: 180px;
+    min-height: 180px;
+    border: 2px solid #7496fe;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 50px;
+}
+@media (max-width:1199px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.sumBlock{
+        order: 3;
+        margin-top: 30px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.sumBlock{
+        order: 3;
+        margin: 30px 10px 0px 0px;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.sumBlock{
+        display: none;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.sumBlock >div.shoppingList{
+    font-size: 14px;
+    color: #ffffff;
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.sumBlock >hr{
+    background-color:#7496fe;
+    border: none;
+    height: 1px;
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.sumBlock >div.sum{
+    font-size: 16px;
+    color: #7496fe;
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.sumBlock >div.sum >span#sum{
+    margin-left: 5px;
+}
+/* 背景LOGO */
+main >div.mainGradient >section >div.bookingChoose >form >div.btnBlock >img.backgroundLogo{
+    width: 230px;
+    height: 86px;
+}
+@media(max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.btnBlock >img.backgroundLogo{
+        display: none;
+    }
+}
+/* 按鈕 */
+main >div.mainGradient >section >div.bookingChoose >form >div.btnBlock{
+    align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 230px;
+    order: 4;
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.btnBlock{
+        margin-top: 30px;
+    }
+}
+@media(max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.btnBlock{
+        margin-top: 30px;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.btnBlock >button:hover{
+    outline: 1px solid #00a0e9;
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.btnBlock >button[name="back"]{
+    margin-top: 25px;
+    margin-right: 20px;
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.btnBlock >button[name="next"]{
+    margin-top: 25px;
+    
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.btnBlock >button[name="next"]:focus{
+    outline: none;
+}

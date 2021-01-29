@@ -1,0 +1,49 @@
+main > div.mainGradient >div.breadcrumbs{
+    width: 100%;
+    background: linear-gradient(90deg,rgb(26, 26, 66),rgb(26, 26, 66 ,0.3),rgb(26, 26, 66 ,0),rgb(26, 26, 66 ,0),rgb(26, 26, 66 ,0),rgb(26, 26, 66 ,0),rgb(26, 26, 66 ,0),rgb(26, 26, 66 ,0));
+}
+@media(max-width:575px){
+    main > div.mainGradient >div.breadcrumbs{
+        background: linear-gradient(90deg,rgb(26, 26, 66),rgb(26, 26, 66 ,0.6),rgb(26, 26, 66 ,0.4),rgb(26, 26, 66 ,0.2),rgb(26, 26, 66 ,0),rgb(26, 26, 66 ,0),rgb(26, 26, 66 ,0),rgb(26, 26, 66 ,0));
+    } 
+}
+main > div.mainGradient >div.breadcrumbs >ul{
+    margin: 0;
+    padding: 10px 10px 0px 40px;
+    font-size: 0px;
+    width: 100%;
+}
+main > div.mainGradient >div.breadcrumbs >ul >li{
+    list-style: none;
+    display: inline-block;
+}
+main > div.mainGradient >div.breadcrumbs >ul >li >a{
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+main > div.mainGradient >div.breadcrumbs >ul >li:last-child >a{
+    color: rgba(255, 255, 255, 0.795);
+}
+@media(max-width:575px){
+    main > div.mainGradient >div.breadcrumbs >ul >li >a{
+        font-size: 14px;
+    }
+}
+main > div.mainGradient >div.breadcrumbs >ul >li::after{
+    content: "/";
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.575);
+}
+@media(max-width:575px){
+    main > div.mainGradient >div.breadcrumbs >ul >li::after{
+        font-size: 14px;
+    }
+}
+main > div.mainGradient >div.breadcrumbs >ul >li:last-child::after{
+    content: "";
+    padding: 0;
+}

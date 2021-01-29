@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: '全真中細黑體';
+    src: url("../../全真中細黑體.TTF");
+}
+body{
+    margin: 0;
+    font-family: '全真中細黑體', 'Noto Sans TC', sans-serif, '微軟正黑體';
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+h1{
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+    width: auto;
+    line-height: 24px;
+}
+h2{
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+    line-height: 18px;
+}
+h3{
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+    line-height: 16px;
+}
+@media (max-width:575px){
+    h1{font-size: 20px;}
+    h2{font-size: 16px;}
+    h3{font-size: 14px;}
+}
+main{
+    width:100%;
+    /* min-width: 1200px; */
+    background-color:#000f6f;
+}
+main >div.mainGradient{
+    background:#3c23f550;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid #00a0e9;
+    color: #fff;
+    background-color: #141ac2;
+    padding: 0;
+    line-height: 30px;
+    cursor: pointer;
+}
+button[name="back"]{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+}
+button:focus{
+    outline: none;
+}
+button[name="back"] >a{
+    color: #fff;
+    display: inline-block;
+    line-height: 30px;
+    width: 100%;
+}

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zn-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie-index</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/flexslider.css" type="text/css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="./js/jquery.flexslider.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/index.js"></script>
+    <style>
+        .paper{
+            background-color: rgba(0, 0, 0, 0.685);
+            color: #fff;
+            position: fixed;
+            top: 70px;
+            left: 10px;
+            padding: 10px;
+            z-index: 10;
+        }
+        .paper > p{
+            padding: 0;
+            margin: 0;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="paper">
+        <p>圖片來源</p>
+        <p>靈魂急轉彎 - 秀泰影城及Disney粉絲專頁</p>
+        <p>名偵探柯南 - http://blog.udn.com/iamcamellia/154100085 及 https://www.niusnews.com/event/view/5637</p>
+        <p>魔物獵人 - https://movies.yahoo.com.tw/movieinfo_main.html/id=10983</p>
+        <p>神力女超人1984 - https://cit.instructure.com/eportfolios/7109/Home/__1984__2020_HD</p>
+        <p>僅於緯育Tibame專題報告使用，無商業行為。</p>
+        <p>如有侵權，請立即告知，將立刻處理並刪除。</p>
+    </div>
+    <header>
+        <nav>
+            <div class="navGradient">
+                <div class="logo">
+                    <a href="./index.html"><img src="./img/nav-logo.png"></a>
+                </div>
+                <div class="menuButton" id="menuButtonBlock">
+                    <button class="menuIcon" id="menuButton">
+                        <div class="line lineTop"></div>
+                        <div class="line lineMiddle"></div>
+                        <div class="line lineBottom"></div>
+                    </button>
+                </div>
+                <div class="menu" id="menu">
+                    <ul class="mainMenu">
+                        <li><a href="./booking.html">線上訂票</a></li>
+                        <li><a href="./movies.html">電影</a></li>
+                        <li><a href="#">影城</a></li>
+                        <li><a href="#">公告與活動</a></li>
+                    </ul>
+                    <div class="subMenu">
+                        <div class="link">
+                            <div class="socialMedia"><a href="#"><img src="./img/icon/icon-facebook.png"></a></div>
+                            <div class="socialMedia"><a href="#"><img src="./img/icon/icon-instagram.png"></a></div>
+                        </div>
+                        <ul>
+                            <li><a href="#">聯絡</a></li>
+                            <li><a href="#">訂票查詢</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- <section class="bannerBlock">
+        <div class="banner">
+            <img src="./img/banner-SOUL.png">
+            <button class="left"><img src="./img/icon/icon awesome-left.png"></button>
+            <button class="right"><img src="./img/icon/icon awesome-right.png"></button>
+        </div>
+    </section> -->
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="./img/banner-SOUL.png" />
+            </li>
+            <li>
+                <img src="./img/banner-SOUL.png" />
+            </li>
+            <li>
+                <img src="./img/banner-SOUL.png" />
+            </li>
+            <li>
+                <img src="./img/banner-SOUL.png" />
+            </li>
+        </ul>
+    </div>
+    <main>
+        <div class="mainGradient">
+            <section class="booking">
+                <div class="perspective">
+                    <div class="cube">
+                        <div class="inner" id="inner"></div>
+                        <div class="front"><img src="./img/soul.jpeg"></div>
+                        <div class="back"><img src="./img/movies/神力女超人.jpg"></div>
+                        <div class="left"><img src="./img/movies/名偵探柯南-紅之校外旅行.jpg"></div>
+                        <div class="right"><img src="./img/movies/魔物獵人.jpg"></div>
+                        <div class="top"></div>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+                <form class="booking" action="./notice.html" method="get">
+                    <h1>線上訂票</h1>
+                    <label><img class="mapIcon" src="./img/icon/icon-map.png"></label>
+                    <select name="cinema">
+                        <option value="" disabled selected hidden>請選擇影城</option>
+                        <option value="Gongguan Movie Cinema">公館Movie影城</option>
+                        <option value="Shilin Movie Cinema">士林Movie影城</option>
+                    </select>
+                    <br>
+                    <label><img src="./img/icon/icon-video.png"></label>
+                    <select name="movie">
+                        <option value="" disabled selected hidden>請選擇電影</option>
+                        <option value="WONDER WOMAN 1984">神力女超人1984</option>
+                        <option value="SOUL">靈魂急轉彎</option>
+                        <option value="DETECTIVE CONAN THE SCARLET SCHOOL TRIP">名偵探柯南：紅之校外旅行 鮮紅篇和戀紅篇</option>
+                        <option value="CLASSMATES MINUS">同學麥娜絲</option>
+                    </select>
+                    <br>
+                    <label><img src="./img/icon/icon-calendar.png"></label>
+                    <select name="date">
+                        <option value="" disabled selected hidden>請選擇日期</option>
+                        <option value="12/19(六)">12/19(六)</option>
+                        <option value="12/20(日)">12/20(日)</option>
+                        <option value="12/21(一)">12/21(一)</option>
+                        <option value="12/22(二)">12/22(二)</option>
+                        <option value="12/23(三)">12/23(三)</option>
+                        <option value="12/24(四)">12/24(四)</option>
+                    </select>
+                    <br>
+                    <label><img src="./img/icon/icon-time.png"></label>
+                    <select name="time">
+                        <option value="" disabled selected hidden>請選擇場次</option>
+                        <option value="12:40">12:40</option>
+                        <option value="15:30">15:30</option>
+                        <option value="19:30">19:30</option>
+                    </select>
+                    <br>
+                    <button type="submit">前往訂票</button>
+                </form>
+            </section>
+            <section class="movies">
+                <h1 class="title">電影</h1>
+                <div class="marginCenter">
+                    <h2 class="leftTitle movies_eventsTitle">現正熱映</h2>
+                    <h2 class="rightTitle movies_eventsTitle">即將上映</h2>
+                </div>
+                <div class="moviesBlock hotNow">
+                    <div class="cardsBlock hotNow">
+                            <a href="./html_movies/WonderWoman1984.html">
+                                <div class="card">
+                                    <div class="img"><img src="./img/movies/神力女超人.jpg"></div>
+                                    <h3>神力女超人1984</h3>
+                                    <p>2020-12-17上映</p>
+                                </div>
+                            </a>
+                            <a href="./html_movies/WonderWoman1984.html">
+                                <div class="card">
+                                    <div class="img"><img src="./img/movies/魔物獵人.jpg"></div>
+                                    <h3>魔物獵人</h3>
+                                    <p>2020-12-04上映</p>
+                                </div>
+                            </a>
+                            <a href="./html_movies/WonderWoman1984.html" class="marginRight">
+                                <div class="card">
+                                    <div class="img"><img src="./img/movies/名偵探柯南-紅之校外旅行.jpg"></div>
+                                    <h3>名偵探柯南：紅之校外旅行<br>
+                                        鮮紅篇&戀紅篇
+                                    </h3>
+                                    <p>2020-11-20上映</p>
+                                </div>
+                            </a>
+                            <a href="./html_movies/WonderWoman1984.html">
+                                <div class="card">
+                                    <div class="img"><img src="./img/movies/神力女超人.jpg"></div>
+                                    <h3>神力女超人1984</h3>
+                                    <p>2020-12-17上映</p>
+                                </div>
+                            </a>
+                            <a href="./html_movies/WonderWoman1984.html">
+                                <div class="card">
+                                    <div class="img"><img src="./img/movies/魔物獵人.jpg"></div>
+                                    <h3>魔物獵人</h3>
+                                    <p>2020-12-04上映</p>
+                                </div>
+                            </a>
+                            <a href="./html_movies/WonderWoman1984.html" class="marginRight">
+                                <div class="card">
+                                    <div class="img"><img src="./img/movies/名偵探柯南-紅之校外旅行.jpg"></div>
+                                    <h3>名偵探柯南：紅之校外旅行<br>
+                                        鮮紅篇&戀紅篇
+                                    </h3>
+                                    <p>2020-11-20上映</p>
+                                </div>
+                            </a>
+                            <a href="./html_movies/WonderWoman1984.html" class="marginRight">
+                                <div class="card">
+                                    <div class="img"><img src="./img/movies/名偵探柯南-紅之校外旅行.jpg"></div>
+                                    <h3>名偵探柯南：紅之校外旅行<br>
+                                        鮮紅篇&戀紅篇
+                                    </h3>
+                                    <p>2020-11-20上映</p>
+                                </div>
+                            </a>
+                            <a href="./html_movies/WonderWoman1984.html" class="marginRight">
+                                <div class="card">
+                                    <div class="img"><img src="./img/movies/名偵探柯南-紅之校外旅行.jpg"></div>
+                                    <h3>名偵探柯南：紅之校外旅行<br>
+                                        鮮紅篇&戀紅篇
+                                    </h3>
+                                    <p>2020-11-20上映</p>
+                                </div>
+                            </a>
+                    </div>
+                    <button class="left"><img src="./img/icon/icon-left-white.png"></button>
+                    <button class="right"><img src="./img/icon/icon-right-white.png"></button>
+                </div>
+                <div class="moviesBlock comingSoon">
+                    <div class="cardsBlock comingSoon">
+                        <a href="./html_movies/WonderWoman1984.html">
+                            <div class="card">
+                                <div class="img"><img src="./img/movies/魔物獵人.jpg"></div>
+                                <h3>魔物獵人</h3>
+                                <p>2020-12-04上映</p>
+                            </div>
+                        </a>
+                        <a href="./html_movies/WonderWoman1984.html">
+                            <div class="card">
+                                <div class="img"><img src="./img/movies/魔物獵人.jpg"></div>
+                                <h3>魔物獵人</h3>
+                                <p>2020-12-04上映</p>
+                            </div>
+                        </a>
+                        <a href="./html_movies/WonderWoman1984.html" class="marginRight">
+                            <div class="card">
+                                <div class="img"><img src="./img/movies/魔物獵人.jpg"></div>
+                                <h3>魔物獵人</h3>
+                                <p>2020-12-04上映</p>
+                            </div>
+                        </a>
+                        <a href="./html_movies/WonderWoman1984.html">
+                            <div class="card">
+                                <div class="img"><img src="./img/movies/魔物獵人.jpg"></div>
+                                <h3>魔物獵人</h3>
+                                <p>2020-12-04上映</p>
+                            </div>
+                        </a>
+                        <a href="./html_movies/WonderWoman1984.html">
+                            <div class="card">
+                                <div class="img"><img src="./img/movies/魔物獵人.jpg"></div>
+                                <h3>魔物獵人</h3>
+                                <p>2020-12-04上映</p>
+                            </div>
+                        </a>
+                        <a href="./html_movies/WonderWoman1984.html" class="marginRight">
+                            <div class="card">
+                                <div class="img"><img src="./img/movies/名偵探柯南-紅之校外旅行.jpg"></div>
+                                <h3>名偵探柯南：紅之校外旅行<br>
+                                    鮮紅篇&戀紅篇
+                                </h3>
+                                <p>2020-11-20上映</p>
+                            </div>
+                        </a>
+                        <a href="./html_movies/WonderWoman1984.html" class="marginRight">
+                            <div class="card">
+                                <div class="img"><img src="./img/movies/名偵探柯南-紅之校外旅行.jpg"></div>
+                                <h3>名偵探柯南：紅之校外旅行<br>
+                                    鮮紅篇&戀紅篇
+                                </h3>
+                                <p>2020-11-20上映</p>
+                            </div>
+                        </a>
+                        <a href="./html_movies/WonderWoman1984.html" class="marginRight">
+                            <div class="card">
+                                <div class="img"><img src="./img/movies/名偵探柯南-紅之校外旅行.jpg"></div>
+                                <h3>名偵探柯南：紅之校外旅行<br>
+                                    鮮紅篇&戀紅篇
+                                </h3>
+                                <p>2020-11-20上映</p>
+                            </div>
+                        </a>
+                    </div>
+                    <button class="left"><img src="./img/icon/icon-left-white.png"></button>
+                    <button class="right"><img src="./img/icon/icon-right-white.png"></button>
+                </div>
+                <button><a href="./movies.html">更多電影</a></button>
+            </section>
+            <section class="cinemas">
+                <h1 class="title">影城</h1>
+                <div class="marginCenter">
+                    <div class="card cardLeft -on" id="cinemasCardLeft">
+                        <div class="img">
+                            <img src="./img/cinema3.jpg">
+                        </div>
+                        <div class="cardContent">
+                            <h2>公館Movie影城</h2>
+                            <div class="combine">
+                                <img src="./img/icon/icon-map-20x26.png">
+                                <p>台北市大安區基隆路四段4X號</p>
+                            </div>
+                            <div class="combine">
+                                <img src="./img/icon/icon-phone.png">
+                                <p>02-2522-334X</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card cardRight" id="cinemasCardRight">
+                        <div class="img">
+                            <img src="./img/cinema4.jpg">
+                        </div>
+                        <div class="cardContent">
+                            <h2>士林Movie影城</h2>
+                            <div class="combine">
+                                <img src="./img/icon/icon-map-20x26.png">
+                                <p>台北市士林區基文林路4XX號</p>
+                            </div>
+                            <div class="combine">
+                                <img src="./img/icon/icon-phone.png">
+                                <p>02-2511-334X</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="events">
+                <h1 class="title">公告與活動</h1>
+                <div class="marginCenter">
+                    <h2 class="leftTitle movies_eventsTitle">活動</h2>
+                    <h2 class="rightTitle movies_eventsTitle">公告</h2>
+                </div>
+                <div class="information activity">
+                    <div class="img imgTop"><img src="./img/events/偵探套餐.jpg"></div>
+                    <div class="text">
+                        <h3>偵探套餐 11/20 現場開賣</h3>
+                        <p>贈限量原版海報</p>
+                        <p class="details"><a href="#">&gt;&gt;詳細內容</a></p>
+                    </div>
+                    <div class="img"><img src="./img/events/靈魂急轉彎-佈置聖誕樹.jpg"></div>
+                    <div class="text">
+                        <h3>【靈魂急轉彎】佈置奇幻耶誕樹</h3>
+                        <p>Movie獨家</p>
+                        <p class="details"><a href="#">&gt;&gt;詳細內容</a></p>
+                    </div>
+                </div>
+                <div class="information announcement">
+                    <div class="text">
+                        <a href="#">
+                            <div class="date">2021/01/21</div>
+                            <div class="contentBlock">
+                                <p class="content">《 柯南 》演出時間異動公告</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text">
+                        <a href="#">
+                            <div class="date">2021/01/18</div>
+                            <div class="contentBlock">
+                                <p class="content">退費服務異動公告</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text">
+                        <a href="#">
+                            <div class="date">2021/01/16</div>
+                            <div class="contentBlock">
+                                <p class="content">聯名信用卡無法累點公告</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text">
+                        <a href="#">
+                            <div class="date">2020/12/21</div>
+                            <div class="contentBlock">
+                                <p class="content">聯名信用卡無法累點公告</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text">
+                        <a href="#">
+                            <div class="date">2020/11/15</div>
+                            <div class="contentBlock">
+                                <p class="content">影城觀影入場須知</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button><a href="#">更多公告與活動</a></button>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="marginAuto">
+            <div class="footer">
+                <ul class="mainMenu">
+                    <li><a href="./booking.html">線上訂票</a></li>
+                    <li><a href="./movies.html">電影</a>
+                        <ul>
+                            <li><a href="./hotNow-1.html">現正熱映</a></li>
+                            <li><a href="./comingSoon-1.html">即將上映</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">影城</a>
+                        <ul>
+                            <li><a href="#">公館Movie影城</a></li>
+                            <li><a href="#">士林Movie影城</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">公告與活動</a>
+                        <ul>
+                            <li><a href="#">公告</a></li>
+                            <li><a href="#">活動</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="group">
+                    <div class="logo"><img src="./img/footer-logo_310x118.png"></div>
+                    <div class="socialMedia">
+                        <a href="#"><img src="./img/icon/icon-facebook-footer52x52.png"></a>
+                        <a href="#"><img src="./img/icon/icon-instagram-footer52x52.png"></a>
+                    </div>
+                </div>
+                <ul class="subMenu">
+                    <li><a href="#">聯絡</a></li>
+                    <li><a href="#">訂票查詢</a></li>
+                    <li><a href="#">常見問題</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div>© Movie影城 All Rights Reserved. Movie影城 版權所有不得轉載</div>
+        </div>
+    </footer>
+</body>
+</html>

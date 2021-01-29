@@ -1,0 +1,51 @@
+@import "./common/common.css";
+@import "./common/nav.css";
+@import "./common/footer.css";
+@import "./common/breadcrumbs.css";
+@import "./common/div_booking.css";
+
+main >div.mainGradient{
+    /* background: linear-gradient(30deg,#7267c800,#7267c802,#7267c805,#3b23f58e,#3002faaf); */
+    background:#3c23f550;
+    position: relative;
+    background-image: url("../img/booking-logo.png");
+    background-repeat: no-repeat;
+    background-size: 750px;
+    background-position: center bottom;
+}
+main >div.mainGradient >section{
+    width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+@media (min-width:992px) and (max-width:1199px){
+    main >div.mainGradient >section{
+        width: 960px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    main >div.mainGradient >section{
+        width: 720px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section{
+        width: 540px;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section{
+        width: 100%;
+    }
+}
+main >div.mainGradient > div.img{
+    width: 160px;
+    position: absolute;
+    top: 82px;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+main >div.mainGradient >section.booking > form.booking{
+    margin: 100px auto;
+    text-align: left;
+}

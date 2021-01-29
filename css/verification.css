@@ -1,0 +1,137 @@
+@import "./common/common.css";
+@import "./common/nav.css";
+@import "./common/footer.css";
+@import "./common/breadcrumbs_booking.css";
+@import "./common/common_booking.css";
+@import "./common/breadcrumbs.css";
+main >div.mainGradient{
+    /* background: linear-gradient(30deg,#7267c800,#7267c802,#7267c805,#3b23f58e,#3002faaf); */
+    background:#3c23f550;
+    position: relative;
+    background-image: url("../img/booking-logo.png");
+    background-repeat: no-repeat;
+    background-size: 750px;
+    background-position: center bottom;
+}
+main >div.mainGradient >section{
+    width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 0 135px 0;
+}
+@media (min-width:992px) and (max-width:1199px){
+    main >div.mainGradient >section{
+        width: 960px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    main >div.mainGradient >section{
+        width: 720px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section{
+        width: 540px;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section{
+        width: 100%;
+    }
+}
+main >div.mainGradient >section >form{
+    width: 400px;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    /* border: 2px solid#6d81ff; */
+    border-radius: 10px;
+    /* background-color: #16224375; */
+    font-size: 0;
+    margin:  20px auto 0px auto;
+    position: relative;
+    /* top: 40px; */
+    overflow: hidden;
+    z-index: 1;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >form{
+        width: 320px;
+        height: 320px;
+    }
+}
+main >div.mainGradient >section >form::before{
+    content: "";
+    display: inline-block;
+    width: 102%;
+    height: 102%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border: 1px solid blue; */
+    background-image: linear-gradient(60deg,#6d80ff 20%,#6d80ff00 30%,#6d80ff 45%,#6d80ff00 70%,#6d81ff 90%);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+main >div.mainGradient >section >form::after{
+    content: "";
+    width: calc( 100% - 2px );
+    height: calc( 100% - 2px );
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color:#000f6f;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+main >div.mainGradient >section >form >h1{
+    margin: 35px 0 20px 0;
+    line-height: 24px;
+    display: inline-block;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >form >h1{
+        margin: 23px 0 10px 0;
+    }
+}
+main >div.mainGradient >section >form >p{
+    font-size: 16px;
+    margin: 5px 0 0 0;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >form >p{
+        font-size: 14px;
+    }
+}
+main >div.mainGradient >section >form >div.code{
+    font-size: 16px;
+    margin-top: 35px;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >form >div.code{
+        font-size: 14px;
+        margin-top: 15px;
+    }
+}
+main >div.mainGradient >section >form >div.code >input{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    margin-top: 12px;
+    padding: 5px 8px;
+}
+main >div.mainGradient >section >form >div.code >input:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px rgb(209, 209, 209);
+    border: none;
+    background-color: rgb(219, 223, 248);
+}
+main >div.mainGradient >section >form.verification >button:hover{
+    outline: 1px solid #00a0e9;
+}

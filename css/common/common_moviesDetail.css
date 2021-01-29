@@ -1,0 +1,401 @@
+main >div.mainGradient{
+    /* background: linear-gradient(30deg,#1f02fc8e 10%,#1e0bb1 20%,rgb(12, 12, 126) 40%,#160b66 60%,rgb(12, 12, 126) 80%,#1f07d49d 90%,#2c04e2af); */
+    background: linear-gradient(30deg,#2e02f3da 20%,#200cb69d 35%,rgb(10, 10, 133) 50%,#16087e 65%,rgb(10, 10, 133) 80%,#200cb69d 90%,#2e02f3da);
+}
+main >div.mainGradient >section{
+    margin: 0 auto;
+    width: 1140px;
+}
+@media (max-width:1199px){
+    main >div.mainGradient >section{
+        width: 100%;
+    }
+}
+main >div.mainGradient >section.movieInformation >div.introduction{
+    width: 980px;
+    margin: 35px auto 0px auto;
+    color: #fff;
+    padding: 40px;
+    font-size: 0;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.37);
+    background: linear-gradient(0deg, #020d2eb7 10%, #28368c 50%,#000f6f); 
+}
+@media (min-width:992px) and (max-width:1199px){
+    main >div.mainGradient >section.movieInformation >div.introduction{
+        width: 90%;
+        margin: 35px auto 0px auto;
+    }
+}
+@media (min-width:576px) and (max-width:991px){
+    main >div.mainGradient >section.movieInformation >div.introduction{
+        width: 95%;
+        margin: 35px auto 0px auto;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section.movieInformation >div.introduction{
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+        padding: 20px 0px 40px 0px;
+        background: none;
+        box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.37);
+    }
+}
+main >div.mainGradient >section.movieInformation >div.introduction >h1{
+    padding: 0px 0px 15px 0px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section.movieInformation >div.introduction >h1{
+        padding: 0px 30px 15px 30px;
+    }
+}
+main >div.mainGradient >section.movieInformation >div.introduction >p.releaseDate{
+    margin: 0;
+    font-size: 16px;
+    display: inline-block;
+    letter-spacing: 1px;
+    vertical-align: top;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section.movieInformation >div.introduction >p.releaseDate{
+        padding: 0px 30px 0px 30px;
+    }
+}
+main >div.mainGradient >section.movieInformation >div.introduction >div.classification{
+    display: inline-block;
+    width: 45px;
+    height: 40px;
+    background-color: aqua;
+    margin-left: 16px;
+    margin-bottom: 6px;
+    vertical-align: top;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section.movieInformation >div.introduction >div.classification{
+        margin-left: 0px;
+    }
+}
+main >div.mainGradient >section.movieInformation >div.introduction >h2{
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section.movieInformation >div.introduction >h2{
+        padding: 0px 30px 0px 30px;
+    }
+}
+main >div.mainGradient >section.movieInformation >div.introduction >p.subtitle{
+    margin: 0;
+    line-height: 24px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section.movieInformation >div.introduction >p.subtitle{
+        padding: 0px 30px 0px 30px;
+    }
+}
+main >div.mainGradient >section.movieInformation >div.introduction >span.content{
+    display: inline-block;
+    letter-spacing: 1px;
+}
+main >div.mainGradient >section.movieInformation >div.introduction >div.video{
+    width: 616px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 40px;
+    display: inline-block;
+    vertical-align: top;
+}
+@media (min-width:992px) and (max-width:1199px){
+    main >div.mainGradient >section.movieInformation >div.introduction >div.video{
+        width: 616px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    main >div.mainGradient >section.movieInformation >div.introduction >div.video{
+        width: 616px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section.movieInformation >div.introduction >div.video{
+        width: 100%;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section.movieInformation >div.introduction >div.video{
+        width: 100%;
+    }
+}
+main >div.mainGradient >section.movieInformation >div.introduction >div.synopsis{
+    width: calc( 100% - 616px - 10px );
+    margin-left: 10px;
+    margin-top: 40px;
+    height: 350px;
+    background-color: #100964;
+    display: inline-block;
+    vertical-align: top;
+    padding: 24px 15px 24px 24px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.514) inset;
+}
+@media (min-width:576px) and (max-width:991px){
+    main >div.mainGradient >section.movieInformation >div.introduction >div.synopsis{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section.movieInformation >div.introduction >div.synopsis{
+        width: 100%;
+        height: 315px;
+        margin: 0px;
+        box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.514) inset;
+        background-color: #11096400;
+        padding: 40px 30px 0px 30px;
+        height: 100%;
+    }
+}
+main >div.mainGradient >section.movieInformation >div.introduction >div.synopsis >div.text {
+      width: 100%;
+      height: 90%;
+      overflow: auto;
+      margin: 12px 0;
+}
+
+main >div.mainGradient >section.movieInformation >div.introduction >div.synopsis >div.text::-webkit-scrollbar {
+    width: 6px;
+}
+main >div.mainGradient >section.movieInformation >div.introduction >div.synopsis >div.text::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+main >div.mainGradient >section.movieInformation >div.introduction >div.synopsis >div.text::-webkit-scrollbar-thumb {
+    background: #00479d;
+    border-radius: 3px;
+}
+main >div.mainGradient >section.movieInformation >div.introduction >div.synopsis >div.text::-webkit-scrollbar-thumb:hover {
+    background: #64a4f1;
+}
+main >div.mainGradient >section.movieInformation >div.introduction >div.synopsis >div.text >pre{
+    font-size: 12px;
+    color: #fff;
+    white-space: pre-wrap;
+    margin: 0;
+    line-height: 22px;
+}
+
+/* 電影場次 */
+main >div.mainGradient >section.chooseTime >div.movieTime{
+    padding: 50px 30px 115px 40px;
+    font-size: 0;
+    margin: 0 auto;
+    width: 980px;
+    /* background-color: rgb(68, 68, 28); */
+}
+@media (min-width:992px) and (max-width:1199px){
+    main >div.mainGradient >section.chooseTime >div.movieTime{
+        width: 95%;
+    }
+}
+@media (min-width:576px) and (max-width:991px){
+    main >div.mainGradient >section.chooseTime >div.movieTime{
+        width: 100%;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section.chooseTime >div.movieTime{
+        padding: 0px 30px 115px 30px;
+        width: 100%;
+    }
+}
+
+main >div.mainGradient >section.chooseTime >div.movieTime >select{
+    width: 170px;
+    height: 30px;
+    font-size: 14px;
+    outline: none;
+    border-radius: 5px;
+    padding: 4px 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    display: block;
+}
+main >div.mainGradient >section.chooseTime >div.movieTime >div.movieDate{
+    margin-bottom: 25px;
+    margin-left: 15px;
+    display: inline-block;
+    width: 100%;
+}
+main >div.mainGradient >section.chooseTime >div.movieTime >div.movieDate >h3{
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+main >div.mainGradient >section.chooseTime >div.movieTime >div.movieDate >ul{
+    font-size: 0px;
+    padding: 0;
+    margin: 0;
+}
+main >div.mainGradient >section.chooseTime >div.movieTime >div.movieDate >ul >li{
+    display: inline-block;
+    list-style: none;
+    font-size: 0px;
+    line-height: 14px;
+}
+main >div.mainGradient >section.chooseTime >div.movieTime >div.movieDate >ul >li >a{
+    display: inline-block;
+    border: 1px solid #fff;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 16px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+main >div.mainGradient >section.chooseTime >div.movieTime >div.movieDate >ul >li >a:hover{
+    background-color: black;
+}
+/* 推薦電影 */
+main >div.mainGradient >section.recommendedMovies{
+    background: linear-gradient(0deg, #000f6f 0%, #28368c 60%,#000f6f); 
+    width: 100%;
+    max-width: 1920px;
+    padding-bottom: 40px;
+}
+
+main >div.mainGradient >section.recommendedMovies >h1{
+    padding: 40px 0 20px 0;
+    width: 1036px;
+    margin: 0 auto;
+}
+@media (max-width:1199px){
+    main >div.mainGradient >section.recommendedMovies >h1{
+        width: 100%;
+        padding-left: 30px;
+    }
+}
+main >div.mainGradient >section.recommendedMovies >div.cardsBlock{
+    position: relative;
+    overflow: hidden;
+    width: 1036px;
+    margin: 0 auto;
+}
+@media (min-width:992px) and (max-width:1199px){
+    main >div.mainGradient >section.recommendedMovies >div.cardsBlock{
+        width: 960px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    main >div.mainGradient >section.recommendedMovies >div.cardsBlock{
+        width: 720px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section.recommendedMovies >div.cardsBlock{
+        width: 540px;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section.recommendedMovies >div.cardsBlock{
+        width: 100%;
+    }
+}
+main >div.mainGradient >section.recommendedMovies >div.cardsBlock >div.cards{
+    font-size: 0;
+    overflow: hidden;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+:root{
+    --recommendedMovies-card-width: calc((100% - 150px) / 5);
+}
+@media (min-width:768px) and (max-width:991px){
+    :root{
+        --recommendedMovies-card-width: calc((100% - 120px) / 4);
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    :root{
+        --recommendedMovies-card-width: calc((100% - 90px) / 3);
+    }
+}
+@media (max-width:575px){
+    :root{
+        --recommendedMovies-card-width: calc((100% - 60px) / 2);
+    }
+}
+main >div.mainGradient >section.recommendedMovies >div.cardsBlock >div.cards >div.card{
+    width: var(--recommendedMovies-card-width);
+    display: inline-block;
+    /* border: 1px solid red; */
+    position: relative;
+    left: calc( var(--recommendedMovies-card-width) / 2 *(-1));
+    flex-shrink: 0;
+}
+main >div.mainGradient >section.recommendedMovies >div.cardsBlock >div.cards >div.card{
+    opacity: 0.3;
+}
+
+main >div.mainGradient >section.recommendedMovies >div.cardsBlock >div.cards >div.card:hover{
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.678);
+}
+
+main >div.mainGradient >section.recommendedMovies >div.cardsBlock >div.cards >div.card.marginLeft{
+    margin-left: 30px;
+}
+main >div.mainGradient >section.recommendedMovies >div.cardsBlock >div.cards >div.card >a{
+    display: inline-block;
+    width: 100%;
+}
+main >div.mainGradient >section.recommendedMovies >div.cardsBlock >div.cards >div.card >a >div.img{
+    width: 100%;
+}
+
+main >div.mainGradient >section.recommendedMovies >div.cardsBlock >div.cards >div.card >a >h2{
+    padding: 12px 0px 12px 10px;
+    font-size: 13px;
+}
+main >div.mainGradient >section.recommendedMovies >div.cardsBlock >div.cover{
+    width: var(--recommendedMovies-card-width);
+    height: 100%;
+}
+main >div.mainGradient >section.recommendedMovies >div.cardsBlock >div.cover.coverLeftCard{
+    position: absolute;
+    top: 0;
+    left: calc( var(--recommendedMovies-card-width) / 2 *(-1));
+}
+main >div.mainGradient >section.recommendedMovies >div.cardsBlock >div.cover.coverRightCard{
+    position: absolute;
+    top: 0;
+    right: calc( var(--recommendedMovies-card-width) / 2 *(-1));
+}
+
+/* 左右按鈕 */
+main >div.mainGradient >section.recommendedMovies >div.cardsBlock >button{
+    width: 10px;
+    height: 15px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    padding: 0;
+}
+main >div.mainGradient >section.recommendedMovies >div.cardsBlock >button >img{
+    width: 100%;
+    vertical-align: top;
+}
+main >div.mainGradient >section.recommendedMovies >div.cardsBlock >button.left{
+    position: absolute;
+    top: 50%;
+    left: 70px;
+    transform: translate(0%, -50%);
+}
+main >div.mainGradient >section.recommendedMovies >div.cardsBlock >button.right{
+    position: absolute;
+    top: 50%;
+    right: 70px;
+    transform: translate(0%, -50%);
+}

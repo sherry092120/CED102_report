@@ -1,0 +1,222 @@
+main >div.mainGradient{
+    background: linear-gradient(30deg,#2e02f3da 0%,#1f07d49d 10%,rgb(9, 9, 158) 25%,#170986 45%,rgb(9, 9, 158) 65%,#1f07d49d 85%,#2e02f3da);
+}
+main >div.mainGradient >section{
+    position: relative;
+}
+main >div.mainGradient >section >h1.title{
+    display: inline-block;
+    height: 70px;
+    position: relative;
+    left: 70px;
+    top: 46px;
+}
+main >div.mainGradient >section >h1.title::before{
+    content: "";
+    width: 190px;
+    height: 70px;
+    position: absolute;
+    top: -46px;
+    left: -70px;
+    background-image: url(../../img/title-logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+main >div.mainGradient >section.movies{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 50px 0 80px 0;
+    font-size: 0;
+    /* background-color: rgba(0, 0, 0, 0.377); */
+}
+@media (min-width:992px) and (max-width:1199px){
+    main >div.mainGradient >section.movies{
+        width: 960px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    main >div.mainGradient >section.movies{
+        width: 720px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section.movies{
+        width: 540px;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section.movies{
+        width: 100%;
+    }
+}
+main >div.mainGradient >section >div.marginCenter{
+    text-align: center;
+    margin-top: 20px;
+}
+
+main >div.mainGradient >section >div.marginCenter >h2.movies_eventsTitle{
+    display: inline-block;
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+@media (min-width:992px) and (max-width:1199px){
+    main >div.mainGradient >section >div.marginCenter >h2.movies_eventsTitle{
+        width: 300px;
+    }
+}
+@media (min-width:576px) and (max-width:991px){
+    main >div.mainGradient >section >div.marginCenter >h2.movies_eventsTitle{
+        width: 40%;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.marginCenter >h2.movies_eventsTitle{
+        width: 40%;
+        font-weight: lighter;
+        line-height: 30px;
+        height: 30px;
+    }
+}
+main >div.mainGradient >section >div.marginCenter >h2.leftTitle{
+    border-bottom: 3px solid #6d81ff;
+}
+main >div.mainGradient >section >div.marginCenter >h2.rightTitle{
+    border-bottom: 3px solid #374f96c0;
+}
+main >div.mainGradient >section >div.marginCenter >h2.leftTitle >a{
+    color: #fff;
+}
+main >div.mainGradient >section >div.marginCenter >h2.rightTitle >a{
+    color: #4a61a3;
+}
+/* CARD */
+main >div.mainGradient >section.movies >div.movies{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 100px 20px 100px;
+}
+@media (min-width:576px) and (max-width:991px){
+    main >div.mainGradient >section.movies >div.movies{
+        padding: 40px 0px 20px 0px;
+    }
+}
+@media (min-width:500px) and (max-width:575px){
+    main >div.mainGradient >section.movies >div.movies{
+        padding: 30px 20px 20px 20px;
+    }
+}
+@media (min-width:470px) and (max-width:499px){
+    main >div.mainGradient >section.movies >div.movies{
+        padding: 30px 100px 20px 100px;
+    }
+}
+@media (max-width:469px){
+    main >div.mainGradient >section.movies >div.movies{
+        padding: 30px 50px 20px 50px;
+    }
+}
+main >div.mainGradient >section.movies >div.movies >a{
+    width: calc((100% - 80px) / 4);
+    margin: 0px 10px 40px 10px;
+    display: flex;
+}
+@media (min-width:992px) and (max-width:1199px){
+    main >div.mainGradient >section.movies >div.movies >a{
+        width: calc((100% - 60px) / 3);
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    main >div.mainGradient >section.movies >div.movies >a{
+        width: calc((100% - 60px) / 3);
+        margin: 0px 10px 30px 10px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section.movies >div.movies >a{
+        width: calc((100% - 60px) / 3);
+        margin: 0px 10px 30px 10px;
+    }
+}
+@media (min-width:500px) and (max-width:575px){
+    main >div.mainGradient >section.movies >div.movies >a{
+        width: calc((100% - 40px) / 2);
+        margin: 0px 10px 30px 10px;
+    }
+}
+@media (max-width:499px){
+    main >div.mainGradient >section.movies >div.movies >a{
+        width: 100%;
+        margin: 0px 10px 30px 10px;
+    }
+}
+main >div.mainGradient >section.movies >div.movies >a >div.card{
+    width: 100%;
+    background-color: #162144;
+    text-align: left;
+}
+/* card:hover */
+main >div.mainGradient >section.movies >div.movies >a >div.card:hover{
+    outline: 2px solid #6c88ff;
+}
+
+main >div.mainGradient >section.movies >div.movies >a >div.card >div.img{
+    width: 100%;
+    overflow: hidden;
+}
+
+main >div.mainGradient >section.movies >div.movies >a >div.card >h3{
+    margin-top: 8px;
+    font-size: 15px;
+    margin-left: 10px;
+    line-height: 22px;
+    font-weight: lighter;
+}
+main >div.mainGradient >section.movies >div.movies >a >div.card >p{
+    color: #fff;
+    margin: 0 0 10px 10px;
+    display: inline-block;
+    font-size: 12px;
+}
+main >div.mainGradient >section.movies >ul.pagination{
+    font-size: 0px;
+    padding: 0;
+    max-width: 1920px;
+    text-align: center;
+}
+main >div.mainGradient >section.movies >ul.pagination >li{
+    display: inline-block;
+    list-style: none;
+    font-size: 14px;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+}
+main >div.mainGradient >section.movies >ul.pagination >li >a{
+    color: #fff;
+    width: 30px;
+    line-height: 36px;
+    font-size: 14px;
+    display: inline-block;
+    background-color: rgba(0, 255, 255, 0);
+    border: 1px solid #fff;
+    text-align: center;
+    margin: 0 5px;
+}
+main >div.mainGradient >section.movies >ul.pagination >li >a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    font-weight: bolder;
+
+}
+main >div.mainGradient >section.movies >ul.pagination >li >a.currentPagination{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    font-weight: bolder;
+}

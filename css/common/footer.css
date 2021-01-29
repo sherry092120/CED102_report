@@ -1,0 +1,255 @@
+footer{
+    width: 100%;
+    /* min-width: 1200px; */
+    /* height: 285px; */
+    background-color: #000617;
+    /* display: inline-block; */
+}
+footer >div.marginAuto{
+    width: 1140px;
+    margin: 0 auto;
+    /* padding: 50px 110px 70px 50px; */
+    padding: 50px 0 70px 0;
+    position: relative;
+}
+@media (min-width:992px) and (max-width:1199px){
+    footer >div.marginAuto{
+        width: 960px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    footer >div.marginAuto{
+        width: 720px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    footer >div.marginAuto{
+        width: 540px;
+    }
+}
+@media (max-width:575px){
+    footer >div.marginAuto{
+        width: 100%;
+        padding: 30px 0 0 0;
+    }
+}
+footer >div.marginAuto >div.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer >div.marginAuto >div.footer >ul.mainMenu{
+    font-size: 0;
+    padding: 0;
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (min-width:768px) and (max-width:991px){
+    footer >div.marginAuto >div.footer >ul.mainMenu{
+        order: 2;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    footer >div.marginAuto >div.footer >ul.mainMenu{
+        order: 2;
+    }
+}
+@media (max-width:575px){
+    footer >div.marginAuto >div.footer >ul.mainMenu{
+        order: 2;
+    }
+}
+footer >div.marginAuto >div.footer >ul.mainMenu >li{
+    margin-right: 70px;
+    vertical-align: top;
+    list-style: none;
+    text-align: center;
+}
+@media (min-width:576px) and (max-width:767px){
+    footer >div.marginAuto >div.footer >ul.mainMenu >li{
+        width: 50%;
+        margin: 0 0 30px 0;
+    }
+}
+@media (max-width:575px){
+    footer >div.marginAuto >div.footer >ul.mainMenu >li{
+        width: 50%;
+        margin: 0 0 25px 0;
+    }
+}
+footer >div.marginAuto >div.footer >ul.mainMenu >li >a{
+    display: inline-block;
+    /* background-color: rgb(63, 94, 94); */
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+@media (max-width:575px){
+    footer >div.marginAuto >div.footer >ul.mainMenu >li >a{
+        font-size: 14px;
+        margin-bottom:20px;
+    }
+}
+footer >div.marginAuto >div.footer >ul.mainMenu >li >ul{
+    font-size: 0;
+    padding: 0;
+}
+footer >div.marginAuto >div.footer >ul.mainMenu >li >ul >li{
+    list-style: none;
+    text-align: center;
+}
+footer >div.marginAuto >div.footer >ul.mainMenu >li >ul >li >a{
+    font-size: 18px;
+    color: #6e9ef5;
+    margin-bottom: 18px;
+    display: inline-block;
+}
+@media (max-width:575px){
+    footer >div.marginAuto >div.footer >ul.mainMenu >li >ul >li >a{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+}
+footer >div.marginAuto >div.footer >div.group{
+    text-align: right;
+    order: 2;
+    margin-left: 50px;
+}
+@media (min-width:768px) and (max-width:991px){
+    footer >div.marginAuto >div.footer >div.group{
+        order: 1;
+        margin: 0 0 50px 0;
+        text-align: center;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    footer >div.marginAuto >div.footer >div.group{
+        order: 1;
+        margin: 0 0 50px 0;
+        text-align: center;
+    }
+}
+@media (max-width:575px){
+    footer >div.marginAuto >div.footer >div.group{
+        order: 1;
+        margin: 0 0 70px 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+footer >div.marginAuto >div.footer >div.group >div.logo{
+    width: 155px;
+    /* height: 60px; */
+}
+@media (min-width:768px) and (max-width:991px){
+    footer >div.marginAuto >div.footer >div.group >div.logo{
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    footer >div.marginAuto >div.footer >div.group >div.logo{
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+@media (max-width:575px){
+    footer >div.marginAuto >div.footer >div.group >div.logo{
+        display: inline-block;
+        margin-right: 20px;
+        width: 100px;
+    }
+}
+footer >div.marginAuto >div.footer >div.group >div.socialMedia{
+    font-size: 0;
+    margin-top: 20px;
+}
+@media (min-width:768px) and (max-width:991px){
+    footer >div.marginAuto >div.footer >div.group >div.socialMedia{
+        display: inline-block;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    footer >div.marginAuto >div.footer >div.group >div.socialMedia{
+        display: inline-block;
+    }
+}
+@media (max-width:575px){
+    footer >div.marginAuto >div.footer >div.group >div.socialMedia{
+        display: inline-block;
+    }
+}
+footer >div.marginAuto >div.footer >div.group >div.socialMedia >a{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    overflow: hidden;
+    margin-left: 12px;
+}
+footer >div.marginAuto >div.footer >div.group >div.socialMedia >a >img{
+    width: 26px;
+}
+footer >div.marginAuto >div.footer >ul.subMenu{
+    display: inline-block;
+    padding: 0;
+    font-size: 0;
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+}
+@media (max-width:575px){
+    footer >div.marginAuto >div.footer >ul.subMenu{
+        right: 50%;
+        top: 100px;
+        transform: translate(50%, 0%);
+    }
+}
+footer >div.marginAuto >div.footer >ul.subMenu >li{
+    display: inline-block;
+    font-size: 14px;
+}
+@media (max-width:575px){
+    footer >div.marginAuto >div.footer >ul.subMenu >li{
+        font-size: 12px;
+    }
+}
+footer >div.marginAuto >div.footer >ul.subMenu >li >a{
+    color: #fff;
+    margin-left: 10px;
+}
+
+footer > div.copyright{
+    /* height: 35px; */
+    background-color: #000f6f;
+}
+footer > div.copyright >div{
+    width: 1140px;
+    color: #a3c3fd;
+    font-size: 12px;
+    text-align: right;
+    margin: 0 auto;
+    line-height: 35px;
+
+}
+@media (min-width:992px) and (max-width:1199px){
+    footer > div.copyright >div{
+        width: 960px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    footer > div.copyright >div{
+        width: 720px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    footer > div.copyright >div{
+        width: 540px;
+    }
+}
+@media (max-width:575px){
+    footer > div.copyright >div{
+        width: 100%;
+        text-align: center;
+    }
+}

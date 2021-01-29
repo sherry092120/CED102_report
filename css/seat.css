@@ -1,0 +1,287 @@
+@import "./common/common.css";
+@import "./common/nav.css";
+@import "./common/footer.css";
+@import "./common/breadcrumbs_booking.css";
+@import "./common/common_booking.css";
+@import "./common/breadcrumbs.css";
+main >div.mainGradient >section >div.bookingChoose >form{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+main >div.mainGradient >section >div.bookingChoose >form >h1{
+    padding: 0 0 20px 0;
+    display: inline-block;
+    width: 100%;
+    line-height: 24px;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >h1{
+        font-weight: lighter;
+        padding: 0 0 20px 10px;
+    }
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock{
+        width: 100%;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat{
+    width: 550px;
+    border: 2px solid #7496fe;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #001c58;
+    vertical-align: top;
+}
+@media (min-width:768px) and (max-width:1199px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat{
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat{
+        width: 400px;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat{
+        width: 100%;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.screenBlock{
+    padding: 40px 80px 60px 80px;
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.screenBlock{
+        padding: 30px 50px 40px 50px;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.screenBlock{
+        padding: 30px 30px 30px 30px;
+        font-size: 14px;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.screenBlock >div.screen{
+    width: 100%;
+    height: 22px;
+    background-color: #6d81ff;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.screenBlock >div.screen >div.screenCover{
+    width: 100%;
+    background-color: #001c58;
+    height: 60%;
+    border-radius: 50% / 100% 100% 0 0;
+    position:absolute;
+    bottom: 0;
+
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.screenBlock >div.screen >div.text{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    line-height: 18px;
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats{
+    width: 100%;
+    padding: 0 50px;
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats{
+        padding: 0 25px;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats{
+        padding: 0 15px;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow{
+    font-size: 0;
+    /* background-color: rgb(156, 106, 44); */
+    margin-bottom: 14px;
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.seatNumber, main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.seat{
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    line-height: 14px;
+    padding: 5px 10px;
+    text-align: center;
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.seatNumber, main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.seat{
+        padding: 4px 8px;
+    }
+}
+@media (min-width:400px) and (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.seatNumber, main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.seat{
+        padding: 6px;
+        font-size: 12px;
+    }
+}
+@media (max-width:399px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.seatNumber, main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.seat{
+        padding: 3px 4px;
+        font-size: 12px;
+    }
+}
+/* 座位顏色 */
+div.sold{
+    background-color: #7d0000;
+    border-color: #fff;
+}
+div.vacancy{
+    border-color: #6d81ff;
+    background-color: #6d80ff00;
+}
+div.selected{
+    background-color: #6d81ff;
+    border: 2px solid #fff;
+}
+@media (max-width:575px){
+    div.selected{
+        border: 1px solid #fff;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.seat{
+    border-radius: 5px;
+    margin-right:10px;
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.seat.vacancy{
+    border: 2px solid #6d81ff;
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.seat{
+        margin-right: 5px;
+    }
+}
+@media (min-width:400px) and (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.seat{
+        margin-right: 4px;
+        width: calc((100% - 30px - 32px - 24px) / 8);
+    }
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.seat.vacancy{
+        border: 1px solid #6d81ff;
+    }
+}
+@media (max-width:399px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.seat{
+        margin-right: 4px;
+        width: calc((100% - 30px - 32px - 16px) / 8);
+    }
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.seat.vacancy{
+        border: 1px solid #6d81ff;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.seat.sold{
+    border: 2px solid #fff;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.seat.sold{
+        border: 1px solid #fff;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.road{
+    margin-left: 30px;
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.road{
+        margin-left: 20px;
+    }
+}
+@media (min-width:400px) and (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.road{
+        margin-left: 12px;
+    }
+}
+@media (max-width:399px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seats >div.seatRow >div.road{
+        margin-left: 8px;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seatIcon{
+    font-size: 0px;
+    padding: 35px 0px 30px 80px;
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seatIcon{
+        padding: 20px 0px 20px 35px;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seatIcon{
+        padding: 10px 0px 20px 25px;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seatIcon >div.description{
+    display: inline-block;
+    /* background-color: aqua; */
+    font-size: 14px;
+    margin-right: 35px;
+    color: #fff;
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seatIcon >div.description{
+        margin-right: 20px;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seatIcon >div.description{
+        margin-right: 8px;
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seatIcon >div.description >div.icon{
+    width: 30px;
+    height: 25px;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seatIcon >div.description >div.vacancy{
+    border: 2px solid #6d81ff;
+}
+
+main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seatIcon >div.description div.selected{
+    border: 2px solid #fff;
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seatIcon >div.description div.sold{
+    border: 2px solid #fff;
+}
+@media(max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seatIcon >div.description >div.icon{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seatIcon >div.description >div.vacancy{
+        border: 1px solid #6d81ff;
+    }
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seatIcon >div.description div.selected{
+        border: 1px solid #fff;
+    }
+    main >div.mainGradient >section >div.bookingChoose >form >div.chooseSeatBlock >div.chooseSeat >div.seatIcon >div.description div.sold{
+        border: 1px solid #fff;
+    }
+}
+/* 按鈕區域 */
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.btnBlock{
+        position: relative;
+    }
+}
+@media(max-width:575px){
+    main >div.mainGradient >section >div.bookingChoose >form >div.btnBlock{
+        position: relative;
+    }
+}
+
+
+
