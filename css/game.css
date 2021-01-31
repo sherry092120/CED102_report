@@ -72,8 +72,9 @@ div.bg >div.closeGame:hover{
 }
 @media (max-width:575px){
     div.bg >div.closeGame{
-        left: 85%;
-        top:90%;
+        left: 5%;
+        top:80%;
+        transform: translateY(-50%);
         background-color: #fa4242;
         color: rgb(255, 255, 255);
         border: 3px solid rgb(255, 255, 255);
@@ -456,7 +457,7 @@ img{
 }
 #firstPage >div.prizeBlock >div.closeBtn{
     position: absolute;
-    left:50%;
+    left: 50%;
     top: 55%;
     transform: translateX(-50%);
     font-family: 'Comic Sans MS';
