@@ -92,9 +92,13 @@ div.gameBlock{
 }
 @media (max-width:499px){
     div.gameBlock{
-        width: 100vw;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%,0%);
+        background-image: url('../img/game/game_background_long.png');
         height: 100vh;
-        background-size: 130%;
+        width: 100vw;
+        background-size: 110%;
         background-position: center;
     }
 }
