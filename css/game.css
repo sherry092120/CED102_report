@@ -97,12 +97,12 @@ div.gameBlock{
         top: 0%;
         left: 0%;
         transform: translate(0%,0%);
-        background-image: url('../img/game/game_background_long.png');
+        background-image: url('../img/game/game_background_long2.png');
         height: 100vh;
         max-height: 100vh;
         width: 100vw;
         background-size: 100%;
-        background-position: top;
+        background-position: center;
     }
 }
 #gamePage > div.readyText{
@@ -240,6 +240,12 @@ img{
     width: 100%;
     line-height: 50px;
     color: #fff;
+}
+@media (min-width:380px) and (max-width:499px){
+    #gamePage >#result >div.prizeBlock{
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 #gamePage >#result >div.prizeBlock >div.yourPrize{
     background-color: rgb(16, 9, 119);
