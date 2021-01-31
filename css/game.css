@@ -98,9 +98,8 @@ div.gameBlock{
         background-image: url('../img/game/game_background_long.png');
         height: 100vh;
         width: 100vw;
-        background-size: 110%;
-        background-position: center;
-        overflow: hidden;
+        background-size: 100%;
+        background-position: top;
     }
 }
 #gamePage > div.readyText{
