@@ -37,8 +37,8 @@ div.beerImg >div.close:hover{
 }
 div.bg{
     background-color: rgba(0, 0, 0, 0.781);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: fixed;
     left: 0;
     top: 0;
@@ -59,7 +59,7 @@ div.bg >div.closeGame{
     border: 3px solid rgb(14, 14, 14);
     background-color: #E6E6E6;
     position: absolute;
-    top: 20px;
+    bottom: 90%;
     left: calc(50% + 240px);
     transform: translateX(-50%);
 }
@@ -72,8 +72,8 @@ div.bg >div.closeGame:hover{
 }
 @media (max-width:575px){
     div.bg >div.closeGame{
-        left: 5%;
-        top:80%;
+        left: 10%;
+        bottom: 10%;
         transform: translateY(-50%);
         background-color: #fa4242;
         color: rgb(255, 255, 255);
@@ -99,7 +99,7 @@ div.gameBlock{
         background-image: url('../img/game/game_background_long.png');
         height: 100vh;
         width: 100vw;
-        background-size: 100%;
+        background-size: 110%;
         background-position: top;
     }
 }
@@ -275,11 +275,11 @@ img{
 }
 /* 第一頁 */
 #firstPage >div.gameName{
-    width: 90%;
+    width: 100%;
     height: 100px;
     background-color: rgba(255, 255, 255, 0.658);
     position: absolute;
-    top: 6%;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
 }
