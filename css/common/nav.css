@@ -175,9 +175,9 @@ header >nav >div.navGradient >div.menu >ul.mainMenu >li >a{
         position: absolute;
         left: -8px;
         top: -10px;
-        background-image: url('../../img/icon/flag.png');
+        background-image: url('../../img/icon/tab_orange.png');
         background-repeat: no-repeat;
-        background-size: 12px;
+        background-size: 8px;
     }
     header >nav >div.navGradient >div.menu >ul.mainMenu >li >a.current::before{
         content: "";
@@ -186,9 +186,9 @@ header >nav >div.navGradient >div.menu >ul.mainMenu >li >a{
         position: absolute;
         left: -8px;
         top: -10px;
-        background-image: url('../../img/icon/flag.png');
+        background-image: url('../../img/icon/tab_orange.png');
         background-repeat: no-repeat;
-        background-size: 12px;
+        background-size: 8px;
     }
 }
 @media (min-width:576px) and (max-width:767px){

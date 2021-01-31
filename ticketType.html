@@ -29,7 +29,7 @@
                     <ul class="mainMenu">
                         <li><a href="./booking.html">線上訂票</a></li>
                         <li><a href="./movies.html">電影</a></li>
-                        <li><a href="#">影城</a></li>
+                        <li><a href="./cinemas.html">影城</a></li>
                         <li><a href="#">公告與活動</a></li>
                     </ul>
                     <div class="subMenu">
@@ -89,9 +89,9 @@
                                     <td class="ticketPrice" id="generalTicketPrice">300</td>
                                     <td>數量</td>
                                     <td>
-                                        <select name="amount" id="generalTicketAmount">
+                                        <select name="generalTicketAmount" id="generalTicketAmount">
                                             <option value="0">0</option>
-                                            <option value="1">1</option>
+                                            <option value="1" selected>1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                             <option value="4">4</option>
@@ -102,7 +102,7 @@
                                         </select>
                                     </td>
                                     <td>合計 NTD</td>
-                                    <td class="total" id="generalTicketTotal">0</td>
+                                    <td class="total" id="generalTicketTotal">300</td>
                                 </tr>
                                 <tr>
                                     <td id="DoublePackageName"><span class="ticketName">偵探雙人套票</span>
@@ -112,7 +112,7 @@
                                     <td class="ticketPrice" id="DoublePackagePrice">800</td>
                                     <td>數量</td>
                                     <td>
-                                        <select name="amount">
+                                        <select name="DoublePackageAmount">
                                             <option value="0">0</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -131,7 +131,7 @@
                                     <td class="ticketPrice" id="singlePackagePrice">350</td>
                                     <td>數量</td>
                                     <td>
-                                        <select name="amount">
+                                        <select name="singlePackageAmount">
                                             <option value="0">0</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -149,9 +149,9 @@
                             </table>
                         </div>
                         <div class="sumBlock">
-                            <div id="shoppingList" class="shoppingList"></div>
+                            <div id="shoppingList" class="shoppingList">一般票*1</div>
                             <hr>
-                            <div class="sum">總額NTD<span id="sum">0</span></div>
+                            <div class="sum">總額NTD<span id="sum">300</span></div>
                         </div>
                         <div class="additionalPurchase">
                             <div class="tabListBlock">
@@ -166,7 +166,7 @@
                                         <div class="img"><img src="./img/bookingSystem/cola.jpg"></div>
                                         <h3 class="colaName">可樂-大</h3>
                                         <p>NTD <span class="colaPrice">50</span></p>
-                                        <select name="colaAmount">
+                                        <select name="colaAmount-L">
                                             <option value="0">0</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -182,7 +182,7 @@
                                         <div class="img"><img src="./img/bookingSystem/cola.jpg" class="medium"></div>
                                         <h3 class="colaName">可樂-中</h3>
                                         <p>NTD <span class="colaPrice">40</span></p>
-                                        <select name="colaAmount">
+                                        <select name="colaAmount-M">
                                             <option value="0">0</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -198,7 +198,7 @@
                                         <div class="img"><img src="./img/bookingSystem/cola.jpg" class="small"></div>
                                         <h3 class="colaName">可樂-小</h3>
                                         <p>NTD <span class="colaPrice">30</span></p>
-                                        <select name="colaAmount">
+                                        <select name="colaAmount-S">
                                             <option value="0">0</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -216,8 +216,8 @@
                                 <div class="tab choosePopcorn">
                                     <div class="card">
                                         <div class="img"><img src="./img/bookingSystem/popcorn.jpg"></div>
-                                        <h3 class="popcornName-L">爆米花-大</h3>
-                                        <p>NTD <span class="popcornPrice-L">60</span></p>
+                                        <h3 class="popcornName">爆米花-大</h3>
+                                        <p>NTD <span class="popcornPrice">60</span></p>
                                         <select name="popcornAmount-L">
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -232,8 +232,8 @@
                                     </div>
                                     <div class="card">
                                         <div class="img"><img src="./img/bookingSystem/popcorn.jpg" class="small"></div>
-                                        <h3 class="popcornName-S">爆米花-小</h3>
-                                        <p>NTD <span class="popcornPrice-S">40</span></p>
+                                        <h3 class="popcornName">爆米花-小</h3>
+                                        <p>NTD <span class="popcornPrice">40</span></p>
                                         <select name="popcornAmount-S">
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -270,7 +270,7 @@
                             <li><a href="./comingSoon-1.html">即將上映</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">影城</a>
+                    <li><a href="./cinemas.html">影城</a>
                         <ul>
                             <li><a href="#">公館Movie影城</a></li>
                             <li><a href="#">士林Movie影城</a></li>

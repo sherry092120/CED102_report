@@ -1,5 +1,6 @@
 main >div.mainGradient{
-    background: linear-gradient(30deg,#2e02f3da 0%,#1f07d49d 10%,rgb(9, 9, 158) 25%,#170986 45%,rgb(9, 9, 158) 65%,#1f07d49d 85%,#2e02f3da);
+    background:#3c23f550;
+    /* background: linear-gradient(30deg,#2e02f3da 0%,#1f07d49d 10%,rgb(9, 9, 158) 25%,#170986 45%,rgb(9, 9, 158) 65%,#1f07d49d 85%,#2e02f3da); */
 }
 main >div.mainGradient >section{
     position: relative;

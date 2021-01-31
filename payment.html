@@ -29,7 +29,7 @@
                     <ul class="mainMenu">
                         <li><a href="./booking.html">線上訂票</a></li>
                         <li><a href="./movies.html">電影</a></li>
-                        <li><a href="#">影城</a></li>
+                        <li><a href="./cinemas.html">影城</a></li>
                         <li><a href="#">公告與活動</a></li>
                     </ul>
                     <div class="subMenu">
@@ -94,7 +94,7 @@
                     <form name="payment" action="./verification.html" method="get">
                         <h1>付款資訊</h1>
                         <div class="payment">
-                            <div class="paymentInformation PayerInformation">
+                            <div class="paymentInformation payerInformation">
                                 <label>姓名</label>
                                 <input type="text" id="payerName">
                                 <br>
@@ -103,6 +103,9 @@
                                 <br>
                                 <label>電子信箱</label>
                                 <input type="text" id="mail">
+                                <br>
+                                <label>折扣碼(非必填)</label>
+                                <input type="text" name="discountCode">
                             </div>
                             <div class="paymentInformation creditCardInformation">
                                 <label>信用卡卡號</label>
@@ -111,9 +114,8 @@
                                 <input name="creditCardNumber" maxlength="4" type="text" id="creditCardNumber3"> - 
                                 <input name="creditCardNumber" maxlength="4" type="text" id="creditCardNumber4">
                                 <br>
-                                <label>信用卡安全碼</label>
-                                <input type="text" id="securityCode">
-                                <br>
+                                <label>安全碼</label>
+                                <input type="text" name="securityCode">
                                 <label>信用卡到期日</label>
                                 <select name="expiryDate" id="expiryMonth">
                                     <option value="month" disabled selected hidden>月</option>
@@ -150,8 +152,8 @@
 
                         <div class="btnBlock">
                             <img src="./img/booking-logo-opacity-460x172.png" class="backgroundLogo">
-                            <button name="back" type="button"><a href="./notice.html">返回</a></button>
-                            <button name="next" type="submit">繼續</button>
+                            <button name="back" type="button" id="back">返回</button>
+                            <button name="next" type="submit">付款</button>
                         </div>
                     </form>
                 </div>
@@ -169,7 +171,7 @@
                             <li><a href="./comingSoon-1.html">即將上映</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">影城</a>
+                    <li><a href="./cinemas.html">影城</a>
                         <ul>
                             <li><a href="#">公館Movie影城</a></li>
                             <li><a href="#">士林Movie影城</a></li>

@@ -7,8 +7,8 @@
 }
 body{
     margin: 0;
-    font-family: '全真中細黑體','Noto Sans TC', sans-serif, '微軟正黑體','Arial';
-    /* font-family:'Arial'; */
+    /* font-family: '全真中細黑體','Noto Sans TC', sans-serif, '微軟正黑體','Arial'; */
+    font-family:'Calibri','微軟正黑體';
 }
 a{
     text-decoration: none;

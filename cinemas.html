@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cinemas - Shilin Cinema</title>
+    <title>cinemas</title>
     <link rel="stylesheet" href="./css/cinemas.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
     <script src="./js/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="./js/nav.js"></script>
+    <script src="./js/cinemas.js"></script>
     
 </head>
 <body>
@@ -29,7 +31,7 @@
                     <ul class="mainMenu">
                         <li><a href="./booking.html">線上訂票</a></li>
                         <li><a href="./movies.html">電影</a></li>
-                        <li><a href="#">影城</a></li>
+                        <li><a href="./cinemas.html"  class="current">影城</a></li>
                         <li><a href="#">公告與活動</a></li>
                     </ul>
                     <div class="subMenu">
@@ -56,23 +58,77 @@
             </div>
             <section class="cinemas">
                 <h1 class="title">影城</h1>
-                <div class="cinemasBlock">
-                    <div class="circle">
-                        <h2>公館</h2>
-                        <img src="./img/icon/icon-map-20x26.png">
-                        <p>台北市大安區基隆路四段4X號</p>
-                        <img src="./img/icon/icon-phone.png">
-                        <p>02-2522-334X</p>
+                <div class="flex">
+                    <div class="block">
+                        <img src="./img/cinema3.jpg">
+                        <a href="#"><div class="more" id="cover1"></div></a>
                     </div>
-                    <div class="circle">
-                        <h2>士林</h2>
-                        <img src="./img/icon/icon-map-20x26.png">
-                        <p>台北市士林區基文林路4XX號</p>
-                        <img src="./img/icon/icon-phone.png">
-                        <p>02-2511-334X</p>
+                    <div class="block">
+                        <ul class="position">
+                            <li>公館Movie影城</li>
+                            <li>台北市大安區基隆路四段4X號</li>
+                            <li>02-2522-334X</li>
+                            <li id="more1"><a href="#">More</a></li>
+                        </ul>
+                        <div class="bg1 bg"></div>
+                        <div class="bg2 bg"></div>
+                        <div class="bg3 bg"></div>
+                        <div class="bg4 bg"></div>
+                        <div class="bg5 bg"></div>
+                        <div class="bg6 bg"></div>
+                    </div>
+                    <div class="block">
+                        <ul class="position">
+                            <li>士林Movie影城</li>
+                            <li>台北市士林區基文林路4XX號</li>
+                            <li>02-2511-334X</li>
+                            <li id="more2"><a href="#">More</a></li>
+                        </ul>
+                        <div class="bg1 bg"></div>
+                        <div class="bg2 bg"></div>
+                        <div class="bg3 bg"></div>
+                        <div class="bg4 bg"></div>
+                        <div class="bg5 bg"></div>
+                        <div class="bg6 bg"></div>
+                    </div>
+                    <div class="block">
+                        <img src="./img/cinema4.jpg">
+                        <a href="#"><div class="more" id="cover2"></div></a>
                     </div>
                 </div>
+
+                <!-- <div class="flex">
+                    <img src="./img/cinema3.jpg" class="puzzle cinema1">
+                    <img src="./img/cinema4.jpg" class="puzzle cinema2">
+                    <img src="./img/puzzle/puzzle_1.png" class="puzzle puzzle1">
+                    <img src="./img/puzzle/puzzle_2_opacity0.png" class="puzzle puzzle2">
+                    <img src="./img/puzzle/puzzle_3_opacity0.png" class="puzzle puzzle3">
+                    <img src="./img/puzzle/puzzle_4.png" class="puzzle puzzle4">
+                    <div class="leftTop block">
+                        <ul class="position">
+                            <li>公館Movie影城</li>
+                            <li>台北市大安區基隆路四段4X號</li>
+                            <li>02-2522-334X</li>
+                            <li> >> more</li>
+                        </ul>
+                    </div>
+                    <div class="rightTop block">
+                    </div>
+                    <div class="leftBottom block">
+
+                    </div>
+                    <div class="rightBottom block">
+                        <ul class="position">
+                            <li>士林Movie影城</li>
+                            <li>台北市士林區基文林路4XX號</li>
+                            <li>02-2511-334X</li>
+                            <li> >> more</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="AAA"></div> -->
             </section>
+
         </div>
     </main>
     <footer>
@@ -86,7 +142,7 @@
                             <li><a href="./comingSoon-1.html">即將上映</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">影城</a>
+                    <li><a href="./cinemas.html">影城</a>
                         <ul>
                             <li><a href="#">公館Movie影城</a></li>
                             <li><a href="#">士林Movie影城</a></li>

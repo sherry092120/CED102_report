@@ -1,0 +1,463 @@
+div.beerImg{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    /* border: 1px solid black; */
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+#beerAnimation{
+    cursor: pointer;
+}
+div.beerImg >div.close{
+    font-size: 12px;
+    font-family: 'Comic Sans MS';
+    font-weight: bolder;
+    border: 2px solid #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: -30px;
+}
+@media (max-width:575px){
+    div.beerImg >div.close{
+        background-color: #fa4242;
+    }
+}
+div.beerImg >div.close:hover{
+    background-color: rgb(253, 76, 76);
+    cursor: pointer;
+
+}
+div.bg{
+    background-color: rgba(0, 0, 0, 0.781);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    opacity: 0;
+    z-index: 2;
+}
+div.bg >div.closeGame{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: black;
+    font-family: 'Comic Sans MS';
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    border: 3px solid rgb(14, 14, 14);
+    background-color: #E6E6E6;
+    position: absolute;
+    top: 20px;
+    left: calc(50% + 240px);
+    transform: translateX(-50%);
+}
+div.bg >div.closeGame:hover{
+    background-color: #fa4242;
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 2px #E0E0E0;
+    cursor: pointer;
+}
+@media (max-width:575px){
+    div.bg >div.closeGame{
+        left: 85%;
+        top:90%;
+        background-color: #fa4242;
+        color: rgb(255, 255, 255);
+        border: 3px solid rgb(255, 255, 255);
+    }
+}
+/* 遊戲區 */
+div.gameBlock{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 435px;
+    height: 600px;
+    background-image: url('../img/game/game_background2.png');
+    background-repeat: no-repeat;
+}
+@media (max-width:499px){
+    div.gameBlock{
+        width: 100vw;
+        height: 100vh;
+        background-size: 130%;
+        background-position: center;
+    }
+}
+#gamePage > div.readyText{
+    width: 200px;
+    text-align: center;
+    color: black;
+    font-family: 'Comic Sans MS';
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#gamePage > div.text{
+    /* background-color: blue; */
+    width: 50%;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 80px;
+    font-family: 'Comic Sans MS';
+    font-weight: bolder;
+}
+#gamePage > div.time{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    text-align: right;
+}
+#gamePage > div.grade{
+    position: absolute;
+    left: 15px;
+    top: 0px;
+}
+#gamePage > div.time >span#gameTime{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    display: inline-block;
+    margin-right: 5px;
+}
+#gamePage > div.grade >span#gameGrade{
+    color: red;
+    font-size: 50px;
+    display: inline-block;
+    margin-left: 10px;
+}
+#gamePage >ul.four{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+}
+@media (max-width:499px){
+    #gamePage >ul.four{
+        top: 58%;
+    }
+}
+#gamePage >ul.four >li.beerBlock{
+    list-style: none;
+    /* border: 1px solid red; */
+    width: 70px;
+    height: 100px;
+    margin: 10px;
+    display: inline-block;
+}
+@media (max-width:499px){
+    #gamePage >ul.four >li.beerBlock{
+        width: 60px;
+        margin: 5px;
+    }
+}
+img{
+    max-width: 100%;
+}
+.empty{
+    width: 80%;
+}
+#gamePage >div.buttle{
+    width: 150px;
+    position: absolute;
+    left: 60%;
+    top: 58%;
+    /* border: 1px solid black; */
+    
+}
+#gamePage >div.buttle >#sprayBeer{
+    position: absolute;
+    top: -80px;
+    left: -75px;
+    z-index: -1;
+    display: none;
+}
+#gamePage >#result{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.808);
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    display: none;
+    opacity: 0;
+}
+@media (max-width:499px){
+    #gamePage >#result{
+        width: 100%;
+        height: 100vh;
+        padding-top: 50px;
+    }
+}
+#gamePage >#result >div.yourGradeBlock{
+    font-family: 'Comic Sans MS';
+    font-size: 20px;
+    width: 100%;
+}
+#gamePage >#result >div.yourGradeBlock >span#yourGrade{
+    display: block;
+    line-height: 80px;
+    font-size: 60px;
+    color: rgb(255, 145, 0);
+    text-shadow: 0px 0px 2px #fff;
+
+}
+#gamePage >#result >div.prizeBlock{
+    font-family: 'Comic Sans MS';
+    font-size: 20px;
+    width: 100%;
+    line-height: 50px;
+    color: #fff;
+}
+#gamePage >#result >div.prizeBlock >div.yourPrize{
+    background-color: rgb(16, 9, 119);
+    box-shadow: 0px 0px 2px #fff;
+    font-size: 12px;
+    color: black;
+    padding: 15px;
+    line-height: 20px;
+}
+#gamePage >#result >div.prizeBlock >div.yourPrize >div.codeBlock{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    line-height: 25px;
+}
+#gamePage >#result >div.prizeBlock >div.yourPrize >div.codeBlock >span#prizeCode{
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+#gamePage >#result >div.prizeBlock >div.yourPrize >span.text{
+    color: #fff;
+    width: 100%;
+    text-align: left;
+    display: block;
+    background-image: url('../img/nav-logo.png');
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: right top;
+    margin-bottom: 20px;
+}
+#gamePage >#result >div.prizeBlock >span.text{
+    font-size: 16px;
+    margin: 20px 0px;
+}
+/* 第一頁 */
+#firstPage >div.gameName{
+    width: 90%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.658);
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#firstPage >div.gameName >img{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#firstPage > div.btnGroup{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#firstPage > div.btnGroup > button{
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    height: 45px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border: 3px solid rgb(15, 22, 124);
+    background-color: rgba(15, 22, 124, 0.733);
+    color: #fff;
+}
+#firstPage > div.btnGroup > button:hover{
+    background-color: rgb(15, 22, 124);
+}
+#firstPage > div.btnGroup >#start{
+    border: 3px solid rgb(124, 15, 15);
+    background-color: rgba(124, 15, 15, 0.781);
+}
+#firstPage > div.btnGroup >#start:hover{
+    background-color: rgb(124, 15, 15);
+}
+/* 遊戲說明 */
+#firstPage >div.guideBlock{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.842);
+    border-radius: 28px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+}
+@media (max-width:499px){
+    #firstPage >div.guideBlock{
+        border-radius: 0px;
+    }
+}
+#firstPage >div.guideBlock >div.guideAnimationBlock{
+    width: 70px;
+    height: 205px;
+    /* border: 1px solid black; */
+    position: absolute;
+    left: 50%;
+    top: -500px;
+    transform: translateX(-50%);
+}
+#firstPage >div.guideBlock >div.guideAnimationBlock> img#guideCork{
+    width: 17%;
+    position: absolute;
+    left: 50%;
+    top: -14px;
+    transform: translateX(-50%);
+}
+#firstPage >div.guideBlock >div.guideAnimationBlock> img#guideSprayBeer{
+    width: 170%;
+    position: absolute;
+    left: 60%;
+    top: -60px;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+#firstPage >div.guideBlock >div.guideAnimationBlock> img#guideButtle{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    
+}
+#firstPage >div.guideBlock >ul.guideText{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+    padding: 20px;
+    margin: 0;
+    /* background-color: rgba(17, 16, 105, 0.89); */
+}
+#firstPage >div.guideBlock >ul.guideText >li{
+    list-style: none;
+    font-size: 18px;
+    line-height: 40px;
+    font-family: 'Comic Sans MS';
+    font-weight: bolder;
+    opacity: 0;
+    color: #fff;
+}
+#firstPage >div.guideBlock >ul.guideText >li >img{
+    width: 40px;
+    margin: 0px 5px;
+}
+#firstPage >div.guideBlock >div.guideBtn{
+    position: absolute;
+    top: 55%;
+    font-family: 'Comic Sans MS';
+    font-size: 25px;
+    opacity: 0;
+    cursor: pointer;
+    display: none;
+}
+#firstPage >div.guideBlock >div.startBtn{
+    right: 50px;
+    color: rgb(228, 68, 68);
+}
+#firstPage >div.guideBlock >div.waitBtn{
+    left: 50px;
+    color: rgb(108, 128, 243);
+}
+/* 獎項 */
+#firstPage >div.prizeBlock{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.842);
+    border-radius: 28px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+}
+@media (max-width:499px){
+    #firstPage >div.prizeBlock{
+        border-radius: 0px;
+    }
+}
+#firstPage >div.prizeBlock >img{
+    position: absolute;
+    width: 80px;
+    top: -500px;
+}
+#firstPage >div.prizeBlock >img#redGift{
+    left: calc(50% - 80px);
+}
+#firstPage >div.prizeBlock >img#orangeGift{
+    left: 52%
+}
+#firstPage >div.prizeBlock >img#blueGift{
+    left: calc(52% - 10px);
+}
+#firstPage >div.prizeBlock >ul.prizeText{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 275px;
+    padding: 20px;
+    margin: 0;
+    /* background-color: rgba(17, 16, 105, 0.89); */
+}
+#firstPage >div.prizeBlock >ul.prizeText >li{
+    list-style: none;
+    font-size: 18px;
+    line-height: 40px;
+    font-family: 'Comic Sans MS';
+    font-weight: bolder;
+    opacity: 0;
+    color: #fff;
+}
+#firstPage >div.prizeBlock >div.closeBtn{
+    position: absolute;
+    left:50%;
+    top: 60%;
+    transform: translateX(-50%);
+    font-family: 'Comic Sans MS';
+    font-size: 25px;
+    opacity: 0;
+    cursor: pointer;
+    color: rgb(108, 128, 243);
+}

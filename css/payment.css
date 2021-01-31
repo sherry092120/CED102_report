@@ -69,23 +69,29 @@ main >div.mainGradient >section >div.bookingChoose >form >div.payment{
         margin-right: 0px;
     }
 }
+main >div.mainGradient >section >div.bookingChoose >form >div.payment input{
+    padding: 0px 8px;
+    font-family: 'Calibri';
+}
 main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation {
     font-size: 16px;
     display: inline-block;
     color: #fff;
+    vertical-align: top;
 }
 @media (min-width:576px) and (max-width:767px){
-    main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.creditCardInformation{
+    main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation{
         width: 100%;
     }
 }
 @media (max-width:575px){
-    main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.creditCardInformation{
+    main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation{
         width: 100%;
     }
 }
 main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.creditCardInformation{
     margin-left: 40px;
+    vertical-align: top;
 }
 @media (min-width:576px) and (max-width:767px){
     main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.creditCardInformation{
@@ -109,19 +115,22 @@ main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.payme
     border-radius: 5px;
     margin-bottom: 20px;
 }
-main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >#payerName,main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >#cellphone,main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >#mail{
+main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >input[name="discountCode"],#payerName,#cellphone,#mail{
     width: 200px;
 }
-main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >#securityCode,main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >input[name="creditCardNumber"]{
+main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >input[name="securityCode"],main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >input[name="creditCardNumber"]{
     width: 50px;
 }
 /* main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >#securityCode{
     width: 120px;
 } */
-main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >select{
+main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.creditCardInformation >select{
     width: 60px;
 }
-main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >select,main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >input{
+main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.creditCardInformation >#expiryMonth{
+    margin-right: 2px;
+}
+main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.creditCardInformation >select,main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.creditCardInformation >input{
     padding: 0 8px;
 }
 main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >select:focus,main >div.mainGradient >section >div.bookingChoose >form >div.payment >div.paymentInformation >input:focus{
