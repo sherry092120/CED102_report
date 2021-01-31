@@ -458,7 +458,7 @@ img{
 #firstPage >div.prizeBlock >div.closeBtn{
     position: absolute;
     left:50%;
-    top: 60%;
+    top: 55%;
     transform: translateX(-50%);
     font-family: 'Comic Sans MS';
     font-size: 25px;
