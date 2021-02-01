@@ -381,7 +381,7 @@ img{
     /* border: 1px solid black; */
     position: absolute;
     left: 50%;
-    top: -500px;
+    bottom: 100%;
     transform: translateX(-50%);
 }
 #firstPage >div.guideBlock >div.guideAnimationBlock> img#guideCork{
@@ -466,7 +466,7 @@ img{
 #firstPage >div.prizeBlock >img{
     position: absolute;
     width: 80px;
-    top: -500px;
+    bottom: 100%;
 }
 #firstPage >div.prizeBlock >img#redGift{
     left: calc(50% - 80px);

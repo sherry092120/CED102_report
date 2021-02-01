@@ -76,7 +76,7 @@ $('document').ready(function(){
         TweenMax.to('div.guideBlock',1,{
             opacity:1,
         })
-        $('div.guideAnimationBlock').animate({top: '395px'},500);
+        $('div.guideAnimationBlock').animate({bottom: '0'},500);
         var tlGuide = new TimelineMax();
         tlGuide.to('#guideButtle',0.1,{
             delay: 1.5,
@@ -92,7 +92,7 @@ $('document').ready(function(){
 
         TweenMax.to('#guideCork',1,{
             delay:1.45,
-            y: -350,
+            y: -1000,
         });
         TweenMax.to('#guideSprayBeer',0.7,{
             delay:1.5,
@@ -111,30 +111,30 @@ $('document').ready(function(){
             display: 'block',
             opacity: 1,
         }).to('#redGift',0.8,{
-            y: 995,
+            y: '100vh',
             rotation:-30,
             ease:SlowMo.ease.config(0.7,0.7,false),
             transformOrigin: 'bottom left',
         }).to('#redGift',0.1,{
-            y: 1000,
+            y: '100vh',
             rotation:-50,
             transformOrigin: 'bottom left',
         }).to('#redGift',0.5,{
-            y: 1005,
+            y: '100vh',
             rotation:0,
             transformOrigin: 'bottom left',
             ease: Bounce.easeOut,
         }).to('#orangeGift',0.8,{
-            y: 995,
+            y: '100vh',
             rotation:30,
             ease:SlowMo.ease.config(0.7,0.7,false),
             transformOrigin: 'bottom right',
         }).to('#orangeGift',0.1,{
-            y: 1000,
+            y: '100vh',
             rotation:50,
             transformOrigin: 'bottom right',
         }).to('#orangeGift',0.5,{
-            y: 1005,
+            y: '100vh',
             rotation:0,
             transformOrigin: 'bottom right',
             ease: Bounce.easeOut,
