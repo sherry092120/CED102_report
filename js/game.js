@@ -1,5 +1,5 @@
 $('document').ready(function(){
-    $('div.closeGame').click(function(){
+    $('.closeGame').click(function(){
         TweenMax.to('div.bg', 1 , {
             opacity: 0,
             display: 'none',

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>movie-booking</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/booking.css">
     <link rel="stylesheet" href="./css/game.css">
@@ -177,6 +178,7 @@
                     </div>
                     <span class="text">請立即截圖或將折扣碼記下來喔~</span>
                 </div>
+                <div class="closeGame">關閉遊戲</div>
             </div>
         </div>
         <div class="gameBlock" id="firstPage">
@@ -185,6 +187,7 @@
                 <button id="start">開始遊戲</button>
                 <button id="guide">遊戲說明</button>
                 <button id="prize">獎項</button>
+                <button class="closeGame" id="closeGame">關閉遊戲</button>
             </div>
             <div class="guideBlock">
                 <div class="guideAnimationBlock">
@@ -193,7 +196,6 @@
                     <img id="guideButtle" src="./img/game/guide_beerButtle.png">
                 </div>
                 <ul class="guideText">
-                    <!-- <li><img src="./img/game/beer_gray.png"><img src="./img/game/beer_full.png"></li> -->
                     <li>遊戲時間為10秒</li>
                     <li>桌上會隨機產生空杯子</li>
                     <li>點擊可將其裝滿，獲得1分</li>
@@ -218,7 +220,7 @@
                 <div class="closeBtn">Back</div>
             </div>
         </div>
-        <div class="closeGame" id="closeGame">X</div>
+        <!-- <div class="closeGame" id="closeGame"><i class="fas fa-door-open"></i> leave game</div> -->
     </div>
 </body>
 </html>
