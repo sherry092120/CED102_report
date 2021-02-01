@@ -408,13 +408,14 @@ img{
     
 }
 #firstPage >div.guideBlock >ul.guideText{
-    position: absolute;
-    top: 70px;
+    position: relative;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    width: 260px;
+    width: 100%;
     padding: 20px;
     margin: 0;
+    text-align: center;
     /* background-color: rgba(17, 16, 105, 0.89); */
 }
 #firstPage >div.guideBlock >ul.guideText >li{
@@ -431,8 +432,8 @@ img{
     margin: 0px 5px;
 }
 #firstPage >div.guideBlock >div.guideBtn{
-    position: absolute;
-    top: 55%;
+    position: relative;
+    top: 15%;
     font-family: 'Comic Sans MS';
     font-size: 25px;
     opacity: 0;
@@ -440,11 +441,13 @@ img{
     display: none;
 }
 #firstPage >div.guideBlock >div.startBtn{
-    right: 50px;
+    left: 50%;
+    display: inline-block;
     color: rgb(253, 77, 77);
 }
 #firstPage >div.guideBlock >div.waitBtn{
-    left: 50px;
+    left: 20%;
+    display: inline-block;
     color: rgb(158, 169, 231);
 }
 /* 獎項 */
@@ -478,14 +481,14 @@ img{
     left: calc(52% - 10px);
 }
 #firstPage >div.prizeBlock >ul.prizeText{
-    position: absolute;
-    top: 70px;
+    position: relative;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    width: 275px;
+    width: 100%;
+    text-align: center;
     padding: 20px;
     margin: 0;
-    /* background-color: rgba(17, 16, 105, 0.89); */
 }
 #firstPage >div.prizeBlock >ul.prizeText >li{
     list-style: none;
@@ -497,15 +500,16 @@ img{
     color: #fff;
 }
 #firstPage >div.prizeBlock >div.closeBtn{
-    position: absolute;
+    position: relative;
     left: 50%;
-    top: 55%;
+    top: 10%;
     transform: translateX(-50%);
     font-family: 'Comic Sans MS';
     font-size: 25px;
     opacity: 0;
     cursor: pointer;
     color: rgb(137, 153, 245);
+    display: inline-block;
 }
 div.closeGame{
     width: 50%;

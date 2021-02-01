@@ -84,10 +84,10 @@ $('document').ready(function(){
         }).to('div.waitBtn',0.7,{
             opacity: 1,
             delay: 4.4,
-            display:'block',
+            display:'inline-block',
         }).to('div.startBtn',0.7,{
             opacity: 1,
-            display:'block',
+            display:'inline-block',
         });
 
         TweenMax.to('#guideCork',1,{
