@@ -100,7 +100,7 @@ main >div.mainGradient >section >div.bookingChoose >div.bookingInformation >div.
     display: inline-block;
     width: 16px;
     height: 16px;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-right: 12px;
     vertical-align: top;
 }

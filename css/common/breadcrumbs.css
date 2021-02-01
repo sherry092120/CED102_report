@@ -25,6 +25,7 @@ main > div.mainGradient >div.breadcrumbs >ul >li >a{
 }
 main > div.mainGradient >div.breadcrumbs >ul >li:last-child >a{
     color: rgba(255, 255, 255, 0.795);
+    cursor: default;
 }
 @media(max-width:575px){
     main > div.mainGradient >div.breadcrumbs >ul >li >a{

@@ -2,3 +2,258 @@
 @import "./nav.css";
 @import "./footer.css";
 @import "./breadcrumbs.css";
+
+main >div.mainGradient.backgroundColor2{
+    background-color: rgb(10, 10, 68);
+}
+main >div.mainGradient >section{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 50px 0 80px 0;
+    font-size: 0;
+}
+@media (min-width:992px) and (max-width:1199px){
+    main >div.mainGradient >section{
+        width: 960px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    main >div.mainGradient >section{
+        width: 720px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    main >div.mainGradient >section{
+        width: 540px;
+    }
+}
+@media (max-width:575px){
+    main >div.mainGradient >section{
+        width: 90%;
+    }
+}
+main >div.mainGradient >section >h1.title{
+    display: inline-block;
+    height: 70px;
+    position: relative;
+    left: 70px;
+    top: 46px;
+}
+main >div.mainGradient >section >h1.title::before{
+    content: "";
+    width: 190px;
+    height: 70px;
+    position: absolute;
+    top: -46px;
+    left: -70px;
+    background-image: url(../../img/title-logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+main >div.mainGradient >section >div.content{
+    font-size: 0;
+    margin-top: 50px;
+}
+main >div.mainGradient >section >div.content >div.leftMenu{
+    width: 100px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    background-color: rgb(43, 23, 100);
+    box-shadow: 0px 0px 5px #fff;
+    padding-top: 30px;
+    vertical-align: top;
+    position: sticky;
+    top: 100px;
+    left: 0px;
+    margin-top: 50px;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.content >div.leftMenu{
+        display: none;
+    }
+}
+main >div.mainGradient >section >div.content >div.leftMenu >div.contactTheme{
+    opacity: 0.3;
+}
+main >div.mainGradient >section >div.content >div.leftMenu >div.contactTheme >img{
+    width: 30%;
+}
+main >div.mainGradient >section >div.content >div.leftMenu >div.contactTheme >p{
+    margin: 5px 0 30px 0;
+    padding: 0;
+}
+
+/* 右邊內容 */
+main >div.mainGradient >section >div.content >div.rightContent{
+    width: calc(100% - 140px);
+    /* background-color: black; */
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 40px;
+}
+@media (max-width:575px){
+    main >div.mainGradient >section >div.content >div.rightContent{
+        width: 100%;
+        margin-left: 0px;
+        padding: 10px;
+    }
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >div.theme{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >div.theme >img{
+    width: 30px;
+    vertical-align: middle;
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >div.theme >h2{
+    font-size: 18px;
+    margin: 0 0 0 10px;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 40px);
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >div.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >div.flex >div.left{
+    width: 60%;
+    margin-top: 20px;
+    color: #fff;
+}
+@media (max-width:767px){
+    main >div.mainGradient >section >div.content >div.rightContent >div >div.flex >div.left{
+        width: 100%;
+    }
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >div.flex >div.left >p{
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >div.flex >div.left >div.iconAndTextBlock{
+    margin-bottom: 10px;
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >div.flex >div.left >div.iconAndTextBlock >img{
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >div.flex >div.left >div.iconAndTextBlock >p{
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >div.flex >div.right{
+    width: 35%;
+}
+@media (max-width:767px){
+    main >div.mainGradient >section >div.content >div.rightContent >div >div.flex >div.right{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+main >div.mainGradient >section >div.content >div.rightContent >div >div.flex >div.right >div.map{
+    height: 300px;
+    overflow: hidden;
+}
+
+main >div.mainGradient >section >div.content >div.rightContent >div >div.flex >div.left >div.title{
+    width: 10%;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+@media (max-width:500px){
+    main >div.mainGradient >section >div.content >div.rightContent >div >div.flex >div.left >div.title{
+        width: 20%;
+    }
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >div.flex >div.left >div.content{
+    width: 90%;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+@media (max-width:500px){
+    main >div.mainGradient >section >div.content >div.rightContent >div >div.flex >div.left >div.content{
+        width: 80%;
+    }
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >div.facility{
+    width: 30%;
+    margin-top: 30px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+@media (max-width:767px){
+    main >div.mainGradient >section >div.content >div.rightContent >div >div.facility{
+        width: 100%;
+    }
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >div.facility >p.text{
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    line-height: 40px;
+    text-align: center;
+}
+
+main >div.mainGradient >section >div.content >div.rightContent >div >div.leftColumn{
+    width: 10%;
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+}
+@media (max-width:500px){
+    main >div.mainGradient >section >div.content >div.rightContent >div >div.leftColumn{
+        width: 20%;
+    }
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >div.rightColumn{
+    width: 90%;
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+}
+@media (max-width:500px){
+    main >div.mainGradient >section >div.content >div.rightContent >div >div.rightColumn{
+        width: 80%;
+    }
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >div.title{
+    font-size: 14px;
+    margin-top: 20px;
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >div.content1{
+    font-size: 14px;
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >div.content2{
+    font-size: 12px;
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >ol.notice{
+    margin: 10px 0px;
+    padding-left: 20px;
+    color: #fff;
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >ol.notice >li{
+    font-size: 12px;
+    line-height: 30px;
+}
+main >div.mainGradient >section >div.content >div.rightContent >div >h3.notice{
+    margin-top: 30px;
+}
