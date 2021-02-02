@@ -23,22 +23,22 @@ $('document').ready(function(){
             if($(window).scrollTop() < 80){
                 $('div.mainGradient').css('backgroundColor','#3c23f550')
             };
-            if($(window).scrollTop() > 200 && $(window).scrollTop() < 200+height1){
+            if($(window).scrollTop() >= 200 && $(window).scrollTop() < 200+height1){
                 $('#theme1').css({opacity:1});
                 $('#theme2').css({opacity:0.3});
                 $('#theme3').css({opacity:0.3});
                 $('#theme4').css({opacity:0.3});
-            }else if($(window).scrollTop() > 200+height1 && $(window).scrollTop() < 200+height1+height2){
+            }else if($(window).scrollTop() >= 200+height1 && $(window).scrollTop() < 200+height1+height2){
                 $('#theme1').css({opacity:0.3});
                 $('#theme2').css({opacity:1});
                 $('#theme3').css({opacity:0.3});
                 $('#theme4').css({opacity:0.3});
-            }else if($(window).scrollTop() > 200+height1+height2 && $(window).scrollTop() < 200+height1+height2+height3){
+            }else if($(window).scrollTop() >= 200+height1+height2 && $(window).scrollTop() < 200+height1+height2+height3){
                 $('#theme1').css({opacity:0.3});
                 $('#theme2').css({opacity:0.3});
                 $('#theme3').css({opacity:1});
                 $('#theme4').css({opacity:0.3});
-            }else if($(window).scrollTop() > 200+height1+height2+height3){
+            }else if($(window).scrollTop() >= 200+height1+height2+height3){
                 $('#theme1').css({opacity:0.3});
                 $('#theme2').css({opacity:0.3});
                 $('#theme3').css({opacity:0.3});
@@ -50,8 +50,17 @@ $('document').ready(function(){
     }
 
     $('#theme1').click(function(){
-        $(window).scrollTop() = 100;
-    })
+        $(window).scrollTop(200);
+    });
+    $('#theme2').click(function(){
+        $(window).scrollTop(600);
+    });
+    $('#theme3').click(function(){
+        $(window).scrollTop(850);
+    });
+    $('#theme4').click(function(){
+        $(window).scrollTop(1400);
+    });
 
 
 })
