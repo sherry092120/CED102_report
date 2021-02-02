@@ -111,30 +111,30 @@ $('document').ready(function(){
             display: 'block',
             opacity: 1,
         }).to('#redGift',0.8,{
-            y: '92vh',
+            y: '95vh',
             rotation:-30,
             ease:SlowMo.ease.config(0.7,0.7,false),
             transformOrigin: 'bottom left',
         }).to('#redGift',0.1,{
-            y: '92vh',
-            rotation:-50,
+            y: '95vh',
+            rota9tion:-50,
             transformOrigin: 'bottom left',
         }).to('#redGift',0.5,{
-            y: '92vh',
+            y: '95vh',
             rotation:0,
             transformOrigin: 'bottom left',
             ease: Bounce.easeOut,
         }).to('#orangeGift',0.8,{
-            y: '92vh',
+            y: '95vh',
             rotation:30,
             ease:SlowMo.ease.config(0.7,0.7,false),
             transformOrigin: 'bottom right',
         }).to('#orangeGift',0.1,{
-            y: '92vh',
+            y: '95vh',
             rotation:50,
             transformOrigin: 'bottom right',
         }).to('#orangeGift',0.5,{
-            y: '92vh',
+            y: '95vh',
             rotation:0,
             transformOrigin: 'bottom right',
             ease: Bounce.easeOut,

@@ -469,7 +469,7 @@ img{
 #firstPage >div.prizeBlock >img{
     position: absolute;
     width: 80px;
-    bottom: 100%;
+    bottom: calc(100% + 97px);
 }
 #firstPage >div.prizeBlock >img#redGift{
     left: calc(50% - 80px);
