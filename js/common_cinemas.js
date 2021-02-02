@@ -1,12 +1,4 @@
 $('document').ready(function(){
-
-    var controller = new ScrollMagic.Controller();
-    new ScrollMagic.Scene({
-        triggerElement:'#trigger01',
-        triggerHook: 0,
-    }).setClassToggle('.mainGradient','backgroundColor2').addIndicators().addTo(controller);
-
-
     var height1 = $('#height1').height();
     var height2 = $('#height2').height();
     var height3 = $('#height3').height();
@@ -25,6 +17,12 @@ $('document').ready(function(){
 
     function scroll(){
         $(window).scroll(function(){
+            if($(window).scrollTop() >= 80){
+                $('div.mainGradient').css('backgroundColor','rgb(10, 10, 68)')
+            };
+            if($(window).scrollTop() < 80){
+                $('div.mainGradient').css('backgroundColor','#3c23f550')
+            };
             if($(window).scrollTop() > 200 && $(window).scrollTop() < 200+height1){
                 $('#theme1').css({opacity:1});
                 $('#theme2').css({opacity:0.3});
